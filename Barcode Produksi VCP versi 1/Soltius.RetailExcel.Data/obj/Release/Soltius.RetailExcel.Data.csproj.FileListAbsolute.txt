@@ -1,0 +1,91 @@
+F:\Projects\RXL\Soltius.RetailExcel.Data\bin\Release\Soltius.RetailExcel.Data.dll
+F:\Projects\RXL\Soltius.RetailExcel.Data\bin\Release\Soltius.RetailExcel.Data.pdb
+F:\Projects\RXL\Soltius.RetailExcel.Data\bin\Release\SoltiusRxlHelperLib.dll
+F:\Projects\RXL\Soltius.RetailExcel.Data\bin\Release\SoltiusRxlHelperLib.pdb
+F:\Projects\RXL\Soltius.RetailExcel.Data\obj\Release\ResolveAssemblyReference.cache
+F:\Projects\RXL\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.Properties.Resources.resources
+F:\Projects\RXL\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.csproj.GenerateResource.Cache
+F:\Projects\RXL\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.dll
+F:\Projects\RXL\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.pdb
+D:\Soltius\SoltiusRXLBarcodeBlaster2008_SourceCode20080513FULL\Soltius.RetailExcel.Data\bin\Release\Soltius.RetailExcel.Data.dll
+D:\Soltius\SoltiusRXLBarcodeBlaster2008_SourceCode20080513FULL\Soltius.RetailExcel.Data\bin\Release\Soltius.RetailExcel.Data.pdb
+D:\Soltius\SoltiusRXLBarcodeBlaster2008_SourceCode20080513FULL\Soltius.RetailExcel.Data\bin\Release\SoltiusRxlHelperLib.dll
+D:\Soltius\SoltiusRXLBarcodeBlaster2008_SourceCode20080513FULL\Soltius.RetailExcel.Data\bin\Release\SoltiusRxlHelperLib.pdb
+D:\Soltius\SoltiusRXLBarcodeBlaster2008_SourceCode20080513FULL\Soltius.RetailExcel.Data\obj\Release\ResolveAssemblyReference.cache
+D:\Soltius\SoltiusRXLBarcodeBlaster2008_SourceCode20080513FULL\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.Properties.Resources.resources
+D:\Soltius\SoltiusRXLBarcodeBlaster2008_SourceCode20080513FULL\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.csproj.GenerateResource.Cache
+D:\Soltius\SoltiusRXLBarcodeBlaster2008_SourceCode20080513FULL\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.dll
+D:\Soltius\SoltiusRXLBarcodeBlaster2008_SourceCode20080513FULL\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.pdb
+D:\jobs\SoltiusRXLBarcodeBlaster2008_SourceCode20080513FULL\Soltius.RetailExcel.Data\bin\Release\Soltius.RetailExcel.Data.dll
+D:\jobs\SoltiusRXLBarcodeBlaster2008_SourceCode20080513FULL\Soltius.RetailExcel.Data\bin\Release\Soltius.RetailExcel.Data.pdb
+D:\jobs\SoltiusRXLBarcodeBlaster2008_SourceCode20080513FULL\Soltius.RetailExcel.Data\bin\Release\SoltiusRxlHelperLib.dll
+D:\jobs\SoltiusRXLBarcodeBlaster2008_SourceCode20080513FULL\Soltius.RetailExcel.Data\bin\Release\SoltiusRxlHelperLib.pdb
+D:\jobs\SoltiusRXLBarcodeBlaster2008_SourceCode20080513FULL\Soltius.RetailExcel.Data\obj\Release\ResolveAssemblyReference.cache
+D:\jobs\SoltiusRXLBarcodeBlaster2008_SourceCode20080513FULL\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.Properties.Resources.resources
+D:\jobs\SoltiusRXLBarcodeBlaster2008_SourceCode20080513FULL\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.csproj.GenerateResource.Cache
+D:\jobs\SoltiusRXLBarcodeBlaster2008_SourceCode20080513FULL\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.dll
+D:\jobs\SoltiusRXLBarcodeBlaster2008_SourceCode20080513FULL\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.pdb
+D:\jobs\SoltiusRXLBarcodeBlaster2008_SourceCode20081223FULL\Soltius.RetailExcel.Data\bin\Release\Soltius.RetailExcel.Data.dll
+D:\jobs\SoltiusRXLBarcodeBlaster2008_SourceCode20081223FULL\Soltius.RetailExcel.Data\bin\Release\Soltius.RetailExcel.Data.pdb
+D:\jobs\SoltiusRXLBarcodeBlaster2008_SourceCode20081223FULL\Soltius.RetailExcel.Data\bin\Release\SoltiusRxlHelperLib.dll
+D:\jobs\SoltiusRXLBarcodeBlaster2008_SourceCode20081223FULL\Soltius.RetailExcel.Data\bin\Release\SoltiusRxlHelperLib.pdb
+D:\jobs\SoltiusRXLBarcodeBlaster2008_SourceCode20081223FULL\Soltius.RetailExcel.Data\obj\Release\ResolveAssemblyReference.cache
+D:\jobs\SoltiusRXLBarcodeBlaster2008_SourceCode20081223FULL\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.Properties.Resources.resources
+D:\jobs\SoltiusRXLBarcodeBlaster2008_SourceCode20081223FULL\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.csproj.GenerateResource.Cache
+D:\jobs\SoltiusRXLBarcodeBlaster2008_SourceCode20081223FULL\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.dll
+D:\jobs\SoltiusRXLBarcodeBlaster2008_SourceCode20081223FULL\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.pdb
+D:\jobs\SoltiusRXLBarcodeFor_SHOES\Soltius.RetailExcel.Data\bin\Release\Soltius.RetailExcel.Data.dll
+D:\jobs\SoltiusRXLBarcodeFor_SHOES\Soltius.RetailExcel.Data\bin\Release\Soltius.RetailExcel.Data.pdb
+D:\jobs\SoltiusRXLBarcodeFor_SHOES\Soltius.RetailExcel.Data\bin\Release\SoltiusRxlHelperLib.dll
+D:\jobs\SoltiusRXLBarcodeFor_SHOES\Soltius.RetailExcel.Data\bin\Release\SoltiusRxlHelperLib.pdb
+D:\jobs\SoltiusRXLBarcodeFor_SHOES\Soltius.RetailExcel.Data\obj\Release\ResolveAssemblyReference.cache
+D:\jobs\SoltiusRXLBarcodeFor_SHOES\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.Properties.Resources.resources
+D:\jobs\SoltiusRXLBarcodeFor_SHOES\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.csproj.GenerateResource.Cache
+D:\jobs\SoltiusRXLBarcodeFor_SHOES\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.dll
+D:\jobs\SoltiusRXLBarcodeFor_SHOES\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.pdb
+E:\Downloads\Compressed\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\bin\Release\Soltius.RetailExcel.Data.dll
+E:\Downloads\Compressed\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\bin\Release\Soltius.RetailExcel.Data.pdb
+E:\Downloads\Compressed\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\bin\Release\SoltiusRxlHelperLib.dll
+E:\Downloads\Compressed\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\bin\Release\SoltiusRxlHelperLib.pdb
+E:\Downloads\Compressed\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\obj\Release\ResolveAssemblyReference.cache
+E:\Downloads\Compressed\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.Properties.Resources.resources
+E:\Downloads\Compressed\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.csproj.GenerateResource.Cache
+E:\Downloads\Compressed\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.dll
+E:\Downloads\Compressed\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.pdb
+D:\Milano Mitra Abadi\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\bin\Release\Soltius.RetailExcel.Data.dll
+D:\Milano Mitra Abadi\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\bin\Release\Soltius.RetailExcel.Data.pdb
+D:\Milano Mitra Abadi\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\bin\Release\SoltiusRxlHelperLib.dll
+D:\Milano Mitra Abadi\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\bin\Release\SoltiusRxlHelperLib.pdb
+D:\Milano Mitra Abadi\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.Properties.Resources.resources
+D:\Milano Mitra Abadi\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.csproj.GenerateResource.Cache
+D:\Milano Mitra Abadi\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.dll
+D:\Milano Mitra Abadi\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.pdb
+D:\Office\Milano Mitra Abadi\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\bin\Release\Soltius.RetailExcel.Data.dll
+D:\Office\Milano Mitra Abadi\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\bin\Release\Soltius.RetailExcel.Data.pdb
+D:\Office\Milano Mitra Abadi\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\bin\Release\SoltiusRxlHelperLib.dll
+D:\Office\Milano Mitra Abadi\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\bin\Release\SoltiusRxlHelperLib.pdb
+D:\Office\Milano Mitra Abadi\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\obj\Release\ResolveAssemblyReference.cache
+D:\Office\Milano Mitra Abadi\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.Properties.Resources.resources
+D:\Office\Milano Mitra Abadi\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.dll
+D:\Office\Milano Mitra Abadi\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.pdb
+D:\Office\Milano Mitra Abadi\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\obj\Release\GenerateResource-ResGen.read.1.tlog
+D:\Office\Milano Mitra Abadi\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\obj\Release\GenerateResource-ResGen.write.1.tlog
+D:\Milano Mitra Abadi\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.csprojResolveAssemblyReference.cache
+C:\Users\Martinus-PC\Desktop\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\bin\Release\Soltius.RetailExcel.Data.dll
+C:\Users\Martinus-PC\Desktop\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\bin\Release\Soltius.RetailExcel.Data.pdb
+C:\Users\Martinus-PC\Desktop\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\bin\Release\SoltiusRxlHelperLib.dll
+C:\Users\Martinus-PC\Desktop\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\bin\Release\SoltiusRxlHelperLib.pdb
+C:\Users\Martinus-PC\Desktop\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.csprojResolveAssemblyReference.cache
+C:\Users\Martinus-PC\Desktop\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.Properties.Resources.resources
+C:\Users\Martinus-PC\Desktop\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.csproj.GenerateResource.Cache
+C:\Users\Martinus-PC\Desktop\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.dll
+C:\Users\Martinus-PC\Desktop\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.pdb
+C:\Users\zebaoth\Desktop\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\bin\Release\Soltius.RetailExcel.Data.dll
+C:\Users\zebaoth\Desktop\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\bin\Release\Soltius.RetailExcel.Data.pdb
+C:\Users\zebaoth\Desktop\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\bin\Release\SoltiusRxlHelperLib.dll
+C:\Users\zebaoth\Desktop\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\bin\Release\SoltiusRxlHelperLib.pdb
+C:\Users\zebaoth\Desktop\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.csprojResolveAssemblyReference.cache
+C:\Users\zebaoth\Desktop\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.Properties.Resources.resources
+C:\Users\zebaoth\Desktop\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.csproj.GenerateResource.Cache
+C:\Users\zebaoth\Desktop\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.dll
+C:\Users\zebaoth\Desktop\SoltiusRXLBarcodeFor_SHOES v 1.1\Soltius.RetailExcel.Data\obj\Release\Soltius.RetailExcel.Data.pdb

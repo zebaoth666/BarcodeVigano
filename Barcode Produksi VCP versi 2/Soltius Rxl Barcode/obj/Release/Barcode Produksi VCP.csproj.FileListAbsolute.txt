@@ -1,0 +1,38 @@
+C:\Users\zebaoth\Desktop\Barcode Vigano\SoltiusRXLBarcodeFor_SHOES v 1.1_2\Soltius Rxl Barcode\bin\Release\Soltius Rxl Barcode.exe.config
+C:\Users\zebaoth\Desktop\Barcode Vigano\SoltiusRXLBarcodeFor_SHOES v 1.1_2\Soltius Rxl Barcode\obj\Release\Soltius Rxl Barcode.exe
+C:\Users\zebaoth\Desktop\Barcode Vigano\SoltiusRXLBarcodeFor_SHOES v 1.1_2\Soltius Rxl Barcode\obj\Release\Soltius Rxl Barcode.pdb
+C:\Users\zebaoth\Desktop\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\bin\Release\Soltius Rxl Barcode.exe.config
+C:\Users\zebaoth\Desktop\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\obj\Release\Soltius Rxl Barcode.exe
+C:\Users\zebaoth\Desktop\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\obj\Release\Soltius Rxl Barcode.pdb
+C:\Users\Martinus-PC\Desktop\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\bin\Release\Soltius Rxl Barcode.exe.config
+C:\Users\Martinus-PC\Desktop\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\obj\Release\Soltius Rxl Barcode.exe
+C:\Users\Martinus-PC\Desktop\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\obj\Release\Soltius Rxl Barcode.pdb
+C:\Users\Martinus-PC\Desktop\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\bin\Release\Soltius Rxl Barcode.exe
+C:\Users\Martinus-PC\Desktop\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\bin\Release\Soltius Rxl Barcode.pdb
+C:\Users\Martinus-PC\Desktop\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\bin\Release\Soltius.RetailExcel.Data.dll
+C:\Users\Martinus-PC\Desktop\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\bin\Release\SoltiusRxlHelperLib.dll
+C:\Users\Martinus-PC\Desktop\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\bin\Release\Soltius.RetailExcel.Data.pdb
+C:\Users\Martinus-PC\Desktop\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\bin\Release\SoltiusRxlHelperLib.pdb
+C:\Users\Martinus-PC\Desktop\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\obj\Release\Barcode Produksi VCP.csprojResolveAssemblyReference.cache
+C:\Users\Martinus-PC\Desktop\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\obj\Release\Soltius.RetailExcel.Utils.PrintBarcode.frmLogin.resources
+C:\Users\Martinus-PC\Desktop\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\obj\Release\Soltius.RetailExcel.Utils.PrintBarcode.MainForm.resources
+C:\Users\Martinus-PC\Desktop\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\obj\Release\Soltius.RetailExcel.Utils.PrintBarcode.MainForm1.resources
+C:\Users\Martinus-PC\Desktop\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\obj\Release\Soltius.RetailExcel.Utils.PrintBarcode.Properties.Resources.resources
+C:\Users\Martinus-PC\Desktop\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\obj\Release\Barcode Produksi VCP.csproj.GenerateResource.Cache
+C:\Users\Martinus-PC\Desktop\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\obj\Release\Soltius Rxl Barcode.exe.licenses
+D:\Apps\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\bin\Release\Soltius Rxl Barcode.exe.config
+D:\Apps\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\obj\Release\Soltius Rxl Barcode.exe
+D:\Apps\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\obj\Release\Soltius Rxl Barcode.pdb
+D:\Apps\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\bin\Release\Soltius Rxl Barcode.exe
+D:\Apps\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\bin\Release\Soltius Rxl Barcode.pdb
+D:\Apps\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\bin\Release\Soltius.RetailExcel.Data.dll
+D:\Apps\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\bin\Release\SoltiusRxlHelperLib.dll
+D:\Apps\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\bin\Release\Soltius.RetailExcel.Data.pdb
+D:\Apps\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\bin\Release\SoltiusRxlHelperLib.pdb
+D:\Apps\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\obj\Release\Barcode Produksi VCP.csprojResolveAssemblyReference.cache
+D:\Apps\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\obj\Release\Soltius.RetailExcel.Utils.PrintBarcode.frmLogin.resources
+D:\Apps\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\obj\Release\Soltius.RetailExcel.Utils.PrintBarcode.MainForm.resources
+D:\Apps\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\obj\Release\Soltius.RetailExcel.Utils.PrintBarcode.MainForm1.resources
+D:\Apps\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\obj\Release\Soltius.RetailExcel.Utils.PrintBarcode.Properties.Resources.resources
+D:\Apps\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\obj\Release\Barcode Produksi VCP.csproj.GenerateResource.Cache
+D:\Apps\Barcode Vigano\Barcode Produksi VCP versi 2\Soltius Rxl Barcode\obj\Release\Soltius Rxl Barcode.exe.licenses

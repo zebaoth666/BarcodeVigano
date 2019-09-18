@@ -1,0 +1,2393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CreateDeliveryValidationHeaderTableCommandText" xml:space="preserve">
+    <value>SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+IF NOT EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[dbo].[DeliveryValidationHeader]') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
+BEGIN
+CREATE TABLE [dbo].[DeliveryValidationHeader](
+	[LevelNumber] [int] NOT NULL,
+	[OrganizationCode] [nvarchar](3) NOT NULL,
+	[DocumentNumber] [nvarchar](13) NOT NULL,
+	[DocumentDateTime] [datetime] NOT NULL,
+	[DeliveryNoteNumber] [nvarchar](13) NOT NULL,
+	[CustomerGRNNumber] [nvarchar](50) NULL,
+	[DocumentStatus] [nvarchar](1) NOT NULL,
+	[CreatedDateTime] [datetime] NOT NULL,
+	[CreatedUserID] [nvarchar](12) NOT NULL,
+	[ModifiedDateTime] [datetime] NOT NULL,
+	[ModifiedUserID] [nvarchar](12) NOT NULL,
+ CONSTRAINT [PK_DeliveryValidationHeader] PRIMARY KEY CLUSTERED 
+(
+	[LevelNumber] ASC,
+	[OrganizationCode] ASC,
+	[DocumentNumber] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+END</value>
+  </data>
+  <data name="CreateDeliveryValidationDetailTableCommandText" xml:space="preserve">
+    <value>SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+IF NOT EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[dbo].[DeliveryValidationDetail]') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
+BEGIN
+CREATE TABLE [dbo].[DeliveryValidationDetail](
+	[DummyKey] [int] IDENTITY(1,1) NOT NULL,
+	[LevelNumber] [int] NOT NULL,
+	[OrganizationCode] [nvarchar](3) NOT NULL,
+	[DocumentNumber] [nvarchar](13) NOT NULL,
+	[ItemCode] [nvarchar](40) NOT NULL,
+	[AcceptedQuantity] [decimal](19, 4) NOT NULL,
+	[RejectedQuantity] [decimal](19, 4) NOT NULL,
+	[DiscrepancyReason] [int] NULL,
+	[Remarks] [nvarchar](500) NULL,
+	[CreatedDateTime] [datetime] NOT NULL,
+	[CreatedUserID] [nvarchar](12) NOT NULL,
+	[ModifiedDateTime] [datetime] NOT NULL,
+	[ModifiedUserID] [nvarchar](12) NOT NULL,
+ CONSTRAINT [PK_DeliveryValidationDetail] PRIMARY KEY CLUSTERED 
+(
+	[DummyKey] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+END</value>
+  </data>
+  <data name="GetOrganizationCommandText" xml:space="preserve">
+    <value>SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+SET NOCOUNT ON;
+
+DECLARE @Organization TABLE (
+		LevelNumber         int
+	,	LevelName			nvarchar(50)
+	,   OrganizationCode	nvarchar(3)
+	,   OrganizationName    nvarchar(50)
+)
+INSERT INTO @Organization
+SELECT  TOP 100 PERCENT
+			LevelNumber         =   CAST(T.ORG_LEVEL_NUMBER AS int)
+		,	LevelName			=	CASE T.ORG_LEVEL_NUMBER
+										WHEN 1 THEN 'HEAD OFFICE'
+										WHEN 2 THEN 'WAREHOUSE'
+										ELSE 'STORE'
+									END
+		,   OrganizationCode	=   T.ORG_CD
+		,   OrganizationName    =   T.ORG_NAME
+FROM    ORGANIZATION_MST T
+
+SELECT  TOP 100 PERCENT
+		T.*
+FROM    @Organization T
+ORDER BY    T.LevelNumber
+		,   T.OrganizationCode</value>
+  </data>
+  <data name="GetDeliveryNoteHeaderUnvalidatedCommandText" xml:space="preserve">
+    <value>SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+SET NOCOUNT ON;
+
+SELECT	TOP 100 PERCENT
+		A.*
+FROM	(
+			SELECT	TOP 100 PERCENT
+						LevelNumber			=	A.LevelNumber
+					,	OrganizationCode	=	A.OrganizationCode
+					,	OrganizationName	=	B.OrganizationName
+					,	DocumentNumber		=	A.DocumentNumber
+					,	DocumentDateTime	=	A.DocumentDateTime
+					,	CustomerCode		=	A.CustomerCode
+					,	CustomerName		=	C.CustomerName
+					,	SalesOrderNumber	=	A.SalesOrderNumber
+			FROM	(
+				SELECT	TOP 100 PERCENT
+							LevelNumber			=	CAST(T.DCH_LEVEL_NUMBER AS int)
+						,	OrganizationCode	=	T.DCH_ORG_CD
+						,	DocumentNumber		=	T.DCH_DOC_NO
+						,	DocumentDateTime	=	T.DCH_DOC_DT
+						,	CustomerCode		=	T.DCH_CUST_CD
+						,	SalesOrderNumber	=	T.DCH_SOH_SO_NO
+				FROM	DELIVERY_CHELLAN_HDR T
+			) A
+			INNER JOIN (
+				SELECT	TOP 100 PERCENT
+							OrganizationCode	=	T.ORG_CD
+						,	OrganizationName	=	T.ORG_NAME
+				FROM	ORGANIZATION_MST T
+			) B
+			ON
+				A.OrganizationCode = B.OrganizationCode
+			INNER JOIN (
+				SELECT	TOP 100 PERCENT
+							CustomerCode	=	T.CUS_CD
+						,	CustomerName	=	T.CUS_FNAME +
+												(CASE 
+													WHEN ISNULL(CUS_MNAME, '') &lt;&gt; '' THEN
+														' ' + CUS_MNAME
+													ELSE ''
+												END) +
+												(CASE 
+													WHEN ISNULL(CUS_LNAME, '') &lt;&gt; '' THEN
+														' ' + CUS_LNAME
+													ELSE ''
+												END)
+				FROM	CUSTOMER_MST T
+			) C
+			ON
+				A.CustomerCode = C.CustomerCode
+		) A
+WHERE	(
+	NOT EXISTS	(
+		SELECT	TOP 100 PERCENT
+				D.DocumentNumber
+		FROM	DeliveryValidationHeader D
+		WHERE	(
+				D.LevelNumber = A.LevelNumber
+			AND	D.OrganizationCode = A.OrganizationCode
+			AND	D.DeliveryNoteNumber = A.DocumentNumber
+			AND	D.DocumentStatus IN ('A', 'O')
+		)
+	)
+)</value>
+  </data>
+  <data name="GetDeliveryNoteDetailByDocumentNumberCommandText" xml:space="preserve">
+    <value>SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+SET NOCOUNT ON;
+
+SELECT	TOP 100 PERCENT
+			LevelNumber			=	CAST(T.DCD_LEVEL_NUMBER AS int)
+		,	OrganizationCode	=	T.DCD_ORG_CD
+		,	DocumentNumber		=	T.DCD_DOC_NO
+		,	ItemCode			=	T.DCD_ITM_CD
+		,	SalesUnit			=	T.DCD_UOM_CD
+		,	Quantity			=	T.DCD_QTY
+		,	UnitPrice			=	T.DCD_PRICE
+FROM	DELIVERY_CHELLAN_DTL T
+WHERE	(
+		T.DCD_ORG_CD = @OrganizationCode
+	AND	T.DCD_DOC_NO = @DocumentNumber
+)</value>
+  </data>
+  <data name="GetCustomerCommandText" xml:space="preserve">
+    <value>SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+SET NOCOUNT ON;
+
+DECLARE @CUSTOMER TABLE (
+		CustomerCode				nvarchar(16)
+	,	CustomerName				nvarchar(150)
+	,	CategoryCode				nvarchar(4)
+	,	CategoryName				nvarchar(50)
+	,	SubCategoryCode				nvarchar(3)
+	,	SubCategoryName				nvarchar(50)
+)
+INSERT INTO @CUSTOMER
+SELECT	TOP 100 PERCENT
+			CustomerCode				=	CUS.CustomerCode
+		,	CustomerName				=	CUS.CustomerName
+		,	CategoryCode				=	CAT.CategoryCode
+		,	CategoryName				=	CAT.CategoryName
+		,	SubCategoryCode				=	CAT.SubCategoryCode
+		,	SubCategoryName				=	CAT.SubCategoryName
+FROM	(
+			SELECT	TOP 100 PERCENT
+						CustomerCode		=	CUS.CUS_CD
+					,	CustomerName		=	CUS.CUS_FNAME 
+												+ (
+													CASE 
+														WHEN ISNULL(CUS.CUS_MNAME,'') &lt;&gt; '' THEN ' ' + CUS.CUS_MNAME 
+														ELSE ''
+													END
+												)
+												+ (
+													CASE 
+														WHEN ISNULL(CUS.CUS_LNAME,'') &lt;&gt; '' THEN ' ' + CUS.CUS_LNAME 
+														ELSE ''
+													END
+												)
+					,	CategoryCode		=	CUS.CUS_CAT_CD
+					,	SubCategoryCode		=	CUS.CUS_SUB_CAT_CD
+			FROM	CUSTOMER_MST CUS
+		) CUS
+		INNER JOIN (
+			SELECT	TOP 100 PERCENT
+						CategoryCode		=	CM.CategoryCode
+					,	CategoryName		=	CM.CategoryName
+					,	SubCategoryCode		=	CCT.SubCategoryCode
+					,	SubCategoryName		=	CCT.SubCategoryName
+			FROM	(
+						SELECT	TOP 100 PERCENT
+									CategoryCode		=	CM.CM_CD
+								,	CategoryName		=	CM.CM_NAME
+						FROM	CODE_MST CM
+						WHERE	(
+							CM.CM_CODE_TYPE IN (15)
+						)
+					) CM
+					INNER JOIN (
+						SELECT	TOP 100 PERCENT
+									CategoryCode		=	CCT.CCT_CODE
+								,	SubCategoryCode		=	CCT.CSCT_CD
+								,	SubCategoryName		=	CCT.CSCT_DESC
+						FROM	CUST_SUB_CATEGORY_MST CCT
+					) CCT
+					ON
+						CM.CategoryCode		=	CCT.CategoryCode
+		) CAT
+		ON
+				CUS.CategoryCode	=	CAT.CategoryCode
+			AND	CUS.SubCategoryCode	=	CAT.SubCategoryCode
+
+SELECT	TOP 100 PERCENT
+		T.*
+FROM	@CUSTOMER T</value>
+  </data>
+  <data name="GetItemByDeliveryNoteCommandText" xml:space="preserve">
+    <value>SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+SET NOCOUNT ON;
+
+SELECT	TOP 100 PERCENT
+			DivisionCode		=	A.ITM_DIV_CD
+		,	OldItemCode			=	ISNULL(A.ITM_OLD_ITM_CD, '')
+		,	ItemCode			=	A.ITM_CD
+		,	ItemName			=	A.ITM_NAME
+		,	StockUnit			=	ISNULL(A.ITM_STOCK_UOM, '')
+		,	PurchaseUnit		=	ISNULL(A.ITM_PURCHASE_UOM, '')
+		,	SalesUnit			=	ISNULL(A.ITM_SALES_UOM, '')
+FROM	ITEM_MST A
+		INNER JOIN DELIVERY_CHELLAN_DTL B
+		ON
+			A.ITM_CD = B.DCD_ITM_CD
+WHERE	(
+		B.DCD_ORG_CD = @OrganizationCode
+	AND B.DCD_DOC_NO = @DocumentNumber
+)</value>
+  </data>
+  <data name="GetItemCommandText" xml:space="preserve">
+    <value>SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+SET NOCOUNT ON;
+
+SELECT	TOP 100 PERCENT
+			DivisionCode		=	T.ITM_DIV_CD
+		,	OldItemCode			=	ISNULL(T.ITM_OLD_ITM_CD, '')
+		,	ItemCode			=	T.ITM_CD
+		,	ItemName			=	T.ITM_NAME
+		,	StockUnit			=	ISNULL(T.ITM_STOCK_UOM, '')
+		,	PurchaseUnit		=	ISNULL(T.ITM_PURCHASE_UOM, '')
+		,	SalesUnit			=	ISNULL(T.ITM_SALES_UOM, '')
+FROM	ITEM_MST T</value>
+  </data>
+  <data name="CreateGeneralDescriptionTableCommandText" xml:space="preserve">
+    <value>SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+IF NOT EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[dbo].[GeneralDescription]') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
+BEGIN
+CREATE TABLE [dbo].[GeneralDescription](
+	[TableType] [int] NOT NULL,
+	[TableKey] [int] NOT NULL,
+	[ShortDescription] [nvarchar](50) NOT NULL,
+	[LongDescription] [nvarchar](200) NOT NULL,
+	[CreatedDateTime] [datetime] NOT NULL,
+	[CreatedUserID] [nvarchar](13) NOT NULL,
+	[ModifiedDateTime] [datetime] NOT NULL,
+	[ModifiedUserID] [nvarchar](13) NOT NULL,
+ CONSTRAINT [PK_GeneralDescription] PRIMARY KEY CLUSTERED 
+(
+	[TableType] ASC,
+	[TableKey] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+END</value>
+  </data>
+  <data name="GetDescriptionCommandText" xml:space="preserve">
+    <value>IF NOT EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[dbo].[GeneralDescription]') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
+BEGIN
+CREATE TABLE [dbo].[GeneralDescription](
+	[TableType] [int] NOT NULL,
+	[TableKey] [int] NOT NULL,
+	[ShortDescription] [nvarchar](50) NOT NULL,
+	[LongDescription] [nvarchar](200) NOT NULL,
+	[CreatedDateTime] [datetime] NOT NULL,
+	[CreatedUserID] [nvarchar](13) NOT NULL,
+	[ModifiedDateTime] [datetime] NOT NULL,
+	[ModifiedUserID] [nvarchar](13) NOT NULL,
+ CONSTRAINT [PK_GeneralDescription] PRIMARY KEY CLUSTERED 
+(
+	[TableType] ASC,
+	[TableKey] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+END
+
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+SET NOCOUNT ON;
+
+SELECT	TOP 100 PERCENT
+		T.*
+FROM	GeneralDescription T
+WHERE	(
+		T.TableType = @TableType
+	AND (
+		(@TableKey IS NULL) 
+		OR (
+			(@TableKey IS NOT NULL) AND (T.TableKey = @TableKey)
+		)
+	)
+)</value>
+  </data>
+  <data name="GetDeliveryValidationDetailByDocumentNumberCommandText" xml:space="preserve">
+    <value>IF NOT EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[dbo].[DeliveryValidationDetail]') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
+BEGIN
+CREATE TABLE [dbo].[DeliveryValidationDetail](
+	[DummyKey] [int] IDENTITY(1,1) NOT NULL,
+	[LevelNumber] [int] NOT NULL,
+	[OrganizationCode] [nvarchar](3) NOT NULL,
+	[DocumentNumber] [nvarchar](13) NOT NULL,
+	[ItemCode] [nvarchar](40) NOT NULL,
+	[AcceptedQuantity] [decimal](19, 4) NOT NULL,
+	[RejectedQuantity] [decimal](19, 4) NOT NULL,
+	[DiscrepancyReason] [int] NULL,
+	[Remarks] [nvarchar](500) NULL,
+	[CreatedDateTime] [datetime] NOT NULL,
+	[CreatedUserID] [nvarchar](12) NOT NULL,
+	[ModifiedDateTime] [datetime] NOT NULL,
+	[ModifiedUserID] [nvarchar](12) NOT NULL,
+ CONSTRAINT [PK_DeliveryValidationDetail] PRIMARY KEY CLUSTERED 
+(
+	[DummyKey] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+END
+
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+SET NOCOUNT ON;
+
+SELECT	TOP 100 PERCENT
+			DummyKey				=	A.DummyKey
+		,	LevelNumber				=	A.LevelNumber
+		,	OrganizationCode		=	A.OrganizationCode
+		,	DocumentNumber			=	A.DocumentNumber
+		,	ItemCode				=	A.ItemCode
+		,	ItemName				=	D.ItemName
+		,	SalesUnit				=	C.SalesUnit
+		,	DeliveryQuantity		=	C.DeliveryQuantity
+		,	AcceptedQuantity		=	A.AcceptedQuantity
+		,	RejectedQuantity		=	A.RejectedQuantity
+		,	DiscrepancyReason		=	A.DiscrepancyReason
+		,	Remarks					=	A.Remarks
+		,	CreatedDateTime			=	A.CreatedDateTime
+		,	CreatedUserID			=	A.CreatedUserID
+		,	ModifiedDateTime		=	A.ModifiedDateTime
+		,	ModifiedUserID			=	A.ModifiedUserID
+FROM	DeliveryValidationDetail A
+		INNER JOIN (
+			SELECT	TOP 100 PERCENT
+						B.LevelNumber
+					,	B.OrganizationCode
+					,	B.DocumentNumber
+					,	B.DeliveryNoteNumber
+			FROM	DeliveryValidationHeader B
+			WHERE	(
+					B.DocumentStatus IN ('A', 'O')
+				AND B.OrganizationCode = @OrganizationCode
+				AND	B.DocumentNumber = @DocumentNumber
+			)
+		) B
+		ON
+				A.LevelNumber = B.LevelNumber
+			AND	A.OrganizationCode = B.OrganizationCode
+			AND A.DocumentNumber = B.DocumentNumber
+		INNER JOIN (
+			SELECT	TOP 100 PERCENT
+						LevelNumber				=	C1.DCD_LEVEL_NUMBER
+					,	OrganizationCode		=	C1.DCD_ORG_CD
+					,	DeliveryNoteNumber		=	C1.DCD_DOC_NO
+					,	ItemCode				=	C1.DCD_ITM_CD
+					,	DeliveryQuantity		=	C1.DCD_QTY
+					,	SalesUnit				=	C1.DCD_UOM_CD
+			FROM	DELIVERY_CHELLAN_DTL C1
+					INNER JOIN DELIVERY_CHELLAN_HDR C2
+					ON
+							C1.DCD_LEVEL_NUMBER = C2.DCH_LEVEL_NUMBER
+						AND	C1.DCD_ORG_CD = C2.DCH_ORG_CD
+						AND C1.DCD_DOC_NO = C2.DCH_DOC_NO
+
+		) C
+		ON
+				B.LevelNumber = C.LevelNumber
+			AND B.OrganizationCode = C.OrganizationCode
+			AND B.DeliveryNoteNumber = C.DeliveryNoteNumber
+			AND A.ItemCode = C.ItemCode
+		INNER JOIN	(
+			SELECT	TOP 100 PERCENT
+						ItemCode	=	D.ITM_CD
+					,	ItemName	=	D.ITM_NAME
+			FROM	ITEM_MST D
+		) D
+		ON
+				A.ItemCode = D.ItemCode
+			AND	C.ItemCode = D.ItemCode</value>
+  </data>
+  <data name="GetDeliveryValidationHeaderByDocumentNumberCommandText" xml:space="preserve">
+    <value>IF NOT EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[dbo].[DeliveryValidationHeader]') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
+BEGIN
+CREATE TABLE [dbo].[DeliveryValidationHeader](
+	[LevelNumber] [int] NOT NULL,
+	[OrganizationCode] [nvarchar](3) NOT NULL,
+	[DocumentNumber] [nvarchar](13) NOT NULL,
+	[DocumentDateTime] [datetime] NOT NULL,
+	[DeliveryNoteNumber] [nvarchar](13) NOT NULL,
+	[CustomerGRNNumber] [nvarchar](50) NULL,
+	[DocumentStatus] [nvarchar](1) NOT NULL,
+	[CreatedDateTime] [datetime] NOT NULL,
+	[CreatedUserID] [nvarchar](12) NOT NULL,
+	[ModifiedDateTime] [datetime] NOT NULL,
+	[ModifiedUserID] [nvarchar](12) NOT NULL,
+ CONSTRAINT [PK_DeliveryValidationHeader] PRIMARY KEY CLUSTERED 
+(
+	[LevelNumber] ASC,
+	[OrganizationCode] ASC,
+	[DocumentNumber] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+END
+
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+SET NOCOUNT ON;
+
+SELECT	TOP 100 PERCENT
+			LevelNumber				=	A.LevelNumber
+		,	OrganizationCode		=	A.OrganizationCode
+		,	OrganizationName		=	B.OrganizationName
+		,	DocumentNumber			=	A.DocumentNumber
+		,	DocumentDateTime		=	A.DocumentDateTime
+		,	DeliveryNoteNumber		=	A.DeliveryNoteNumber
+		,	DeliveryDateTime		=	C.DeliveryDateTime
+		,	SalesOrderNumber		=	C.SalesOrderNumber
+		,	CustomerCode			=	C.CustomerCode
+		,	CustomerName			=	D.CustomerName
+		,	CustomerGRNNumber		=	A.CustomerGRNNumber
+		,	DocumentStatus			=	A.DocumentStatus
+		,	CreatedDateTime			=	A.CreatedDateTime
+		,	CreatedUserID			=	A.CreatedUserID
+		,	ModifiedDateTime		=	A.ModifiedDateTime
+		,	ModifiedUserID			=	A.ModifiedUserID
+FROM	(
+			SELECT	TOP 100 PERCENT
+					A.*
+			FROM	DeliveryValidationHeader A
+			WHERE	(
+					A.DocumentStatus IN ('A', 'O')
+				AND	A.DocumentNumber = @DocumentNumber
+			)
+		) A
+		INNER JOIN (
+			SELECT	TOP 100 PERCENT
+						LevelNumber			=	B.ORG_LEVEL_NUMBER
+					,	OrganizationCode	=	B.ORG_CD
+					,	OrganizationName	=	B.ORG_NAME
+			FROM	ORGANIZATION_MST B
+			WHERE	(
+				B.OrganizationCode = @OrganizationCode
+			)
+		) B
+		ON
+				A.LevelNumber = B.LevelNumber
+			AND	A.OrganizationCode = B.OrganizationCode
+		INNER JOIN (
+			SELECT	TOP 100 PERCENT
+						LevelNumber			=	C.DCH_LEVEL_NUMBER
+					,	OrganizationCode	=	C.DCH_ORG_CD
+					,	DeliveryNoteNumber	=	C.DCH_DOC_NO
+					,	DeliveryDateTime	=	C.DCH_DOC_DT
+					,	SalesOrderNumber	=	C.DCH_SOH_SO_NO
+					,	CustomerCode		=	C.DCH_CUST_CD
+			FROM	DELIVERY_CHELLAN_HDR C
+		) C
+		ON
+				A.LevelNumber = C.LevelNumber
+			AND	A.OrganizationCode = C.OrganizationCode
+			AND A.DeliveryNoteNumber = C.DeliveryNoteNumber
+		INNER JOIN (
+			SELECT	TOP 100 PERCENT
+						CustomerCode	=	D.CUS_CD
+					,	CustomerName	=	D.CUS_FNAME 
+											+ (
+												CASE 
+													WHEN ISNULL(D.CUS_MNAME,'') &lt;&gt; '' THEN ' ' + D.CUS_MNAME 
+													ELSE ''
+												END
+											)
+											+ (
+												CASE 
+													WHEN ISNULL(D.CUS_LNAME,'') &lt;&gt; '' THEN ' ' + D.CUS_LNAME 
+													ELSE ''
+												END
+											)
+			FROM	CUSTOMER_MST D
+		) D
+		ON
+			C.CustomerCode = D.CustomerCode</value>
+  </data>
+  <data name="GetDeliveryValidationDetailCommandText" xml:space="preserve">
+    <value>IF NOT EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[dbo].[DeliveryValidationDetail]') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
+BEGIN
+CREATE TABLE [dbo].[DeliveryValidationDetail](
+	[DummyKey] [int] IDENTITY(1,1) NOT NULL,
+	[LevelNumber] [int] NOT NULL,
+	[OrganizationCode] [nvarchar](3) NOT NULL,
+	[DocumentNumber] [nvarchar](13) NOT NULL,
+	[ItemCode] [nvarchar](40) NOT NULL,
+	[AcceptedQuantity] [decimal](19, 4) NOT NULL,
+	[RejectedQuantity] [decimal](19, 4) NOT NULL,
+	[DiscrepancyReason] [int] NULL,
+	[Remarks] [nvarchar](500) NULL,
+	[CreatedDateTime] [datetime] NOT NULL,
+	[CreatedUserID] [nvarchar](12) NOT NULL,
+	[ModifiedDateTime] [datetime] NOT NULL,
+	[ModifiedUserID] [nvarchar](12) NOT NULL,
+ CONSTRAINT [PK_DeliveryValidationDetail] PRIMARY KEY CLUSTERED 
+(
+	[DummyKey] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+END
+
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+SET NOCOUNT ON;
+
+SELECT	TOP 100 PERCENT
+			DummyKey				=	A.DummyKey
+		,	LevelNumber				=	A.LevelNumber
+		,	OrganizationCode		=	A.OrganizationCode
+		,	DocumentNumber			=	A.DocumentNumber
+		,	ItemCode				=	A.ItemCode
+		,	ItemName				=	D.ItemName
+		,	SalesUnit				=	C.SalesUnit
+		,	DeliveryQuantity		=	C.DeliveryQuantity
+		,	AcceptedQuantity		=	A.AcceptedQuantity
+		,	RejectedQuantity		=	A.RejectedQuantity
+		,	DiscrepancyReason		=	A.DiscrepancyReason
+		,	Remarks					=	A.Remarks
+		,	CreatedDateTime			=	A.CreatedDateTime
+		,	CreatedUserID			=	A.CreatedUserID
+		,	ModifiedDateTime		=	A.ModifiedDateTime
+		,	ModifiedUserID			=	A.ModifiedUserID
+FROM	DeliveryValidationDetail A
+		INNER JOIN (
+			SELECT	TOP 100 PERCENT
+						B.LevelNumber
+					,	B.OrganizationCode
+					,	B.DocumentNumber
+					,	B.DeliveryNoteNumber
+			FROM	DeliveryValidationHeader B
+			WHERE	(
+				B.DocumentStatus IN ('A', 'O')
+			)
+		) B
+		ON
+				A.LevelNumber = B.LevelNumber
+			AND	A.OrganizationCode = B.OrganizationCode
+			AND A.DocumentNumber = B.DocumentNumber
+		INNER JOIN (
+			SELECT	TOP 100 PERCENT
+						LevelNumber				=	C1.DCD_LEVEL_NUMBER
+					,	OrganizationCode		=	C1.DCD_ORG_CD
+					,	DeliveryNoteNumber		=	C1.DCD_DOC_NO
+					,	ItemCode				=	C1.DCD_ITM_CD
+					,	DeliveryQuantity		=	C1.DCD_QTY
+					,	SalesUnit				=	C1.DCD_UOM_CD
+			FROM	DELIVERY_CHELLAN_DTL C1
+					INNER JOIN DELIVERY_CHELLAN_HDR C2
+					ON
+							C1.DCD_LEVEL_NUMBER = C2.DCH_LEVEL_NUMBER
+						AND	C1.DCD_ORG_CD = C2.DCH_ORG_CD
+						AND C1.DCD_DOC_NO = C2.DCH_DOC_NO
+
+		) C
+		ON
+				B.LevelNumber = C.LevelNumber
+			AND B.OrganizationCode = C.OrganizationCode
+			AND B.DeliveryNoteNumber = C.DeliveryNoteNumber
+			AND A.ItemCode = C.ItemCode
+		INNER JOIN	(
+			SELECT	TOP 100 PERCENT
+						ItemCode	=	D.ITM_CD
+					,	ItemName	=	D.ITM_NAME
+			FROM	ITEM_MST D
+		) D
+		ON
+				A.ItemCode = D.ItemCode
+			AND	C.ItemCode = D.ItemCode</value>
+  </data>
+  <data name="GetDeliveryValidationHeaderCommandText" xml:space="preserve">
+    <value>IF NOT EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[dbo].[DeliveryValidationHeader]') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
+BEGIN
+CREATE TABLE [dbo].[DeliveryValidationHeader](
+	[LevelNumber] [int] NOT NULL,
+	[OrganizationCode] [nvarchar](3) NOT NULL,
+	[DocumentNumber] [nvarchar](13) NOT NULL,
+	[DocumentDateTime] [datetime] NOT NULL,
+	[DeliveryNoteNumber] [nvarchar](13) NOT NULL,
+	[CustomerGRNNumber] [nvarchar](50) NULL,
+	[DocumentStatus] [nvarchar](1) NOT NULL,
+	[CreatedDateTime] [datetime] NOT NULL,
+	[CreatedUserID] [nvarchar](12) NOT NULL,
+	[ModifiedDateTime] [datetime] NOT NULL,
+	[ModifiedUserID] [nvarchar](12) NOT NULL,
+ CONSTRAINT [PK_DeliveryValidationHeader] PRIMARY KEY CLUSTERED 
+(
+	[LevelNumber] ASC,
+	[OrganizationCode] ASC,
+	[DocumentNumber] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+END
+
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+SET NOCOUNT ON;
+
+SELECT	TOP 100 PERCENT
+			LevelNumber				=	A.LevelNumber
+		,	OrganizationCode		=	A.OrganizationCode
+		,	OrganizationName		=	B.OrganizationName
+		,	DocumentNumber			=	A.DocumentNumber
+		,	DocumentDateTime		=	A.DocumentDateTime
+		,	DeliveryNoteNumber		=	A.DeliveryNoteNumber
+		,	DeliveryDateTime		=	C.DeliveryDateTime
+		,	SalesOrderNumber		=	C.SalesOrderNumber
+		,	CustomerCode			=	C.CustomerCode
+		,	CustomerName			=	D.CustomerName
+		,	CustomerGRNNumber		=	A.CustomerGRNNumber
+		,	DocumentStatus			=	A.DocumentStatus
+		,	CreatedDateTime			=	A.CreatedDateTime
+		,	CreatedUserID			=	A.CreatedUserID
+		,	ModifiedDateTime		=	A.ModifiedDateTime
+		,	ModifiedUserID			=	A.ModifiedUserID
+FROM	(
+			SELECT	TOP 100 PERCENT
+					A.*
+			FROM	DeliveryValidationHeader A
+			WHERE	(
+				A.DocumentStatus IN ('A', 'O')
+			)
+		) A
+		INNER JOIN (
+			SELECT	TOP 100 PERCENT
+						LevelNumber			=	B.ORG_LEVEL_NUMBER
+					,	OrganizationCode	=	B.ORG_CD
+					,	OrganizationName	=	B.ORG_NAME
+			FROM	ORGANIZATION_MST B
+		) B
+		ON
+				A.LevelNumber = B.LevelNumber
+			AND	A.OrganizationCode = B.OrganizationCode
+		INNER JOIN (
+			SELECT	TOP 100 PERCENT
+						LevelNumber			=	C.DCH_LEVEL_NUMBER
+					,	OrganizationCode	=	C.DCH_ORG_CD
+					,	DeliveryNoteNumber	=	C.DCH_DOC_NO
+					,	DeliveryDateTime	=	C.DCH_DOC_DT
+					,	SalesOrderNumber	=	C.DCH_SOH_SO_NO
+					,	CustomerCode		=	C.DCH_CUST_CD
+			FROM	DELIVERY_CHELLAN_HDR C
+		) C
+		ON
+				A.LevelNumber = C.LevelNumber
+			AND	A.OrganizationCode = C.OrganizationCode
+			AND A.DeliveryNoteNumber = C.DeliveryNoteNumber
+		INNER JOIN (
+			SELECT	TOP 100 PERCENT
+						CustomerCode	=	D.CUS_CD
+					,	CustomerName	=	D.CUS_FNAME 
+											+ (
+												CASE 
+													WHEN ISNULL(D.CUS_MNAME,'') &lt;&gt; '' THEN ' ' + D.CUS_MNAME 
+													ELSE ''
+												END
+											)
+											+ (
+												CASE 
+													WHEN ISNULL(D.CUS_LNAME,'') &lt;&gt; '' THEN ' ' + D.CUS_LNAME 
+													ELSE ''
+												END
+											)
+			FROM	CUSTOMER_MST D
+		) D
+		ON
+			C.CustomerCode = D.CustomerCode</value>
+  </data>
+  <data name="GetOrganizationByOrganizationCodeCommandText" xml:space="preserve">
+    <value>SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+SET NOCOUNT ON;
+
+DECLARE @Organization TABLE (
+		LevelNumber         int
+	,	LevelName			nvarchar(50)
+	,   OrganizationCode	nvarchar(3)
+	,   OrganizationName    nvarchar(50)
+)
+INSERT INTO @Organization
+SELECT  TOP 100 PERCENT
+			LevelNumber         =   CAST(T.ORG_LEVEL_NUMBER AS int)
+		,	LevelName			=	CASE T.ORG_LEVEL_NUMBER
+										WHEN 1 THEN 'HEAD OFFICE'
+										WHEN 2 THEN 'WAREHOUSE'
+										ELSE 'STORE'
+									END
+		,   OrganizationCode	=   T.ORG_CD
+		,   OrganizationName    =   T.ORG_NAME
+FROM    ORGANIZATION_MST T
+WHERE	(
+	T.ORG_CD = @OrganizationCode
+)
+
+SELECT  TOP 100 PERCENT
+		T.*
+FROM    @Organization T
+ORDER BY    T.LevelNumber
+		,   T.OrganizationCode</value>
+  </data>
+  <data name="GetDeliveryNoteHeaderByOrganizationCodeCommandText" xml:space="preserve">
+    <value>SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+SET NOCOUNT ON;
+
+SELECT	TOP 100 PERCENT
+		A.*
+FROM	(
+			SELECT	TOP 100 PERCENT
+						LevelNumber			=	A.LevelNumber
+					,	OrganizationCode	=	A.OrganizationCode
+					,	OrganizationName	=	B.OrganizationName
+					,	DocumentNumber		=	A.DocumentNumber
+					,	DocumentDateTime	=	A.DocumentDateTime
+					,	CustomerCode		=	A.CustomerCode
+					,	CustomerName		=	C.CustomerName
+					,	SalesOrderNumber	=	A.SalesOrderNumber
+			FROM	(
+				SELECT	TOP 100 PERCENT
+							LevelNumber			=	CAST(T.DCH_LEVEL_NUMBER AS int)
+						,	OrganizationCode	=	T.DCH_ORG_CD
+						,	DocumentNumber		=	T.DCH_DOC_NO
+						,	DocumentDateTime	=	T.DCH_DOC_DT
+						,	CustomerCode		=	T.DCH_CUST_CD
+						,	SalesOrderNumber	=	T.DCH_SOH_SO_NO
+				FROM	DELIVERY_CHELLAN_HDR T
+				WHERE	(
+					T.DCH_ORG_CD = @OrganizationCode
+				)
+			) A
+			INNER JOIN (
+				SELECT	TOP 100 PERCENT
+							OrganizationCode	=	T.ORG_CD
+						,	OrganizationName	=	T.ORG_NAME
+				FROM	ORGANIZATION_MST T
+			) B
+			ON
+				A.OrganizationCode = B.OrganizationCode
+			INNER JOIN (
+				SELECT	TOP 100 PERCENT
+							CustomerCode	=	T.CUS_CD
+						,	CustomerName	=	T.CUS_FNAME +
+												(CASE 
+													WHEN ISNULL(CUS_MNAME, '') &lt;&gt; '' THEN
+														' ' + CUS_MNAME
+													ELSE ''
+												END) +
+												(CASE 
+													WHEN ISNULL(CUS_LNAME, '') &lt;&gt; '' THEN
+														' ' + CUS_LNAME
+													ELSE ''
+												END)
+				FROM	CUSTOMER_MST T
+			) C
+			ON
+				A.CustomerCode = C.CustomerCode
+		) A
+WHERE	(
+	NOT EXISTS	(
+		SELECT	TOP 100 PERCENT
+				D.DocumentNumber
+		FROM	DeliveryValidationHeader D
+		WHERE	(
+				D.LevelNumber = A.LevelNumber
+			AND	D.OrganizationCode = A.OrganizationCode
+			AND	D.DeliveryNoteNumber = A.DocumentNumber
+			AND	D.DocumentStatus IN ('A', 'O')
+		)
+	)
+)</value>
+  </data>
+  <data name="GetDeliveryValidationHeaderByOrganizationCodeCommandText" xml:space="preserve">
+    <value>IF NOT EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[dbo].[DeliveryValidationHeader]') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
+BEGIN
+CREATE TABLE [dbo].[DeliveryValidationHeader](
+	[LevelNumber] [int] NOT NULL,
+	[OrganizationCode] [nvarchar](3) NOT NULL,
+	[DocumentNumber] [nvarchar](13) NOT NULL,
+	[DocumentDateTime] [datetime] NOT NULL,
+	[DeliveryNoteNumber] [nvarchar](13) NOT NULL,
+	[CustomerGRNNumber] [nvarchar](50) NULL,
+	[DocumentStatus] [nvarchar](1) NOT NULL,
+	[CreatedDateTime] [datetime] NOT NULL,
+	[CreatedUserID] [nvarchar](12) NOT NULL,
+	[ModifiedDateTime] [datetime] NOT NULL,
+	[ModifiedUserID] [nvarchar](12) NOT NULL,
+ CONSTRAINT [PK_DeliveryValidationHeader] PRIMARY KEY CLUSTERED 
+(
+	[LevelNumber] ASC,
+	[OrganizationCode] ASC,
+	[DocumentNumber] ASC
+) ON [PRIMARY]
+) ON [PRIMARY]
+END
+
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+SET NOCOUNT ON;
+
+SELECT	TOP 100 PERCENT
+			LevelNumber				=	A.LevelNumber
+		,	OrganizationCode		=	A.OrganizationCode
+		,	OrganizationName		=	B.OrganizationName
+		,	DocumentNumber			=	A.DocumentNumber
+		,	DocumentDateTime		=	A.DocumentDateTime
+		,	DeliveryNoteNumber		=	A.DeliveryNoteNumber
+		,	DeliveryDateTime		=	C.DeliveryDateTime
+		,	SalesOrderNumber		=	C.SalesOrderNumber
+		,	CustomerCode			=	C.CustomerCode
+		,	CustomerName			=	D.CustomerName
+		,	CustomerGRNNumber		=	A.CustomerGRNNumber
+		,	DocumentStatus			=	A.DocumentStatus
+		,	CreatedDateTime			=	A.CreatedDateTime
+		,	CreatedUserID			=	A.CreatedUserID
+		,	ModifiedDateTime		=	A.ModifiedDateTime
+		,	ModifiedUserID			=	A.ModifiedUserID
+FROM	(
+			SELECT	TOP 100 PERCENT
+					A.*
+			FROM	DeliveryValidationHeader A
+			WHERE	(
+					A.OrganizationCode = @OrganizationCode
+				AND	A.DocumentStatus IN ('A', 'O')
+			)
+		) A
+		INNER JOIN (
+			SELECT	TOP 100 PERCENT
+						LevelNumber			=	B.ORG_LEVEL_NUMBER
+					,	OrganizationCode	=	B.ORG_CD
+					,	OrganizationName	=	B.ORG_NAME
+			FROM	ORGANIZATION_MST B
+		) B
+		ON
+				A.LevelNumber = B.LevelNumber
+			AND	A.OrganizationCode = B.OrganizationCode
+		INNER JOIN (
+			SELECT	TOP 100 PERCENT
+						LevelNumber			=	C.DCH_LEVEL_NUMBER
+					,	OrganizationCode	=	C.DCH_ORG_CD
+					,	DeliveryNoteNumber	=	C.DCH_DOC_NO
+					,	DeliveryDateTime	=	C.DCH_DOC_DT
+					,	SalesOrderNumber	=	C.DCH_SOH_SO_NO
+					,	CustomerCode		=	C.DCH_CUST_CD
+			FROM	DELIVERY_CHELLAN_HDR C
+		) C
+		ON
+				A.LevelNumber = C.LevelNumber
+			AND	A.OrganizationCode = C.OrganizationCode
+			AND A.DeliveryNoteNumber = C.DeliveryNoteNumber
+		INNER JOIN (
+			SELECT	TOP 100 PERCENT
+						CustomerCode	=	D.CUS_CD
+					,	CustomerName	=	D.CUS_FNAME 
+											+ (
+												CASE 
+													WHEN ISNULL(D.CUS_MNAME,'') &lt;&gt; '' THEN ' ' + D.CUS_MNAME 
+													ELSE ''
+												END
+											)
+											+ (
+												CASE 
+													WHEN ISNULL(D.CUS_LNAME,'') &lt;&gt; '' THEN ' ' + D.CUS_LNAME 
+													ELSE ''
+												END
+											)
+			FROM	CUSTOMER_MST D
+		) D
+		ON
+			C.CustomerCode = D.CustomerCode</value>
+  </data>
+  <data name="GetDivisionCommandText" xml:space="preserve">
+    <value>SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+SET NOCOUNT ON;
+
+SELECT	TOP 100 PERCENT
+			DivisionCode	=	T.DIV_ID
+		,	DivisionName	=	T.DIV_DESC
+FROM	DIVISION_MST T</value>
+  </data>
+  <data name="GetTransferOutHeaderCommandText" xml:space="preserve">
+    <value>SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+SET NOCOUNT ON;
+
+DECLARE @Organization TABLE (
+		LevelNumber			int
+	,	OrganizationCode	nvarchar(3)
+	,	OrganizationName	nvarchar(50)
+)
+INSERT INTO @Organization
+SELECT	TOP 100 PERCENT
+			LevelNumber			=	CAST(T.ORG_LEVEL_NUMBER AS int)
+		,	OrganizationCode	=	T.ORG_CD
+		,	OrganizationName	=	T.ORG_NAME
+FROM	ORGANIZATION_MST T
+
+SELECT	TOP 100 PERCENT
+			SenderLevelNumber			=	A.SenderLevelNumber
+		,	SenderOrganizationCode		=	A.SenderOrganizationCode
+		,	SenderOrganizationName		=	ISNULL((
+												SELECT	TOP 1
+														B.OrganizationName
+												FROM	@Organization B
+												WHERE	(
+														B.LevelNumber = A.SenderLevelNumber
+													AND	B.OrganizationCode = A.SenderOrganizationCode
+												)
+											), '')
+		,	SenderDocumentNumber		=	A.SenderDocumentNumber
+		,	SenderDocumentDate			=	A.SenderDocumentDate
+		,	ReceiverLevelNumber			=	A.ReceiverLevelNumber
+		,	ReceiverOrganizationCode	=	A.ReceiverOrganizationCode
+		,	ReceiverOrganizationName	=	ISNULL((
+												SELECT	TOP 1
+														B.OrganizationName
+												FROM	@Organization B
+												WHERE	(
+														B.LevelNumber = A.ReceiverLevelNumber
+													AND	B.OrganizationCode = A.ReceiverOrganizationCode
+												)
+											), '')
+FROM	(
+			SELECT	TOP 100 PERCENT
+						SenderLevelNumber			=	CAST(TOH.TOH_LEVEL_NUMBER AS int)
+					,	SenderOrganizationCode		=	TOH.TOH_ORG_CD
+					,	SenderDocumentNumber		=	TOH.TOH_DOC_NO
+					,	SenderDocumentDate			=	CAST(CONVERT(nvarchar(10), TOH.TOH_DOC_DT, 111) AS datetime)
+					,	ReceiverLevelNumber			=	TOH.TOH_TO_LEVEL_NUMBER
+					,	ReceiverOrganizationCode	=	TOH.TOH_TO_ORG_CD
+			FROM	TRANSFER_OUT_HDR TOH
+			WHERE	(
+					TOH.TOH_STATUS IN ('A', 'O')
+				AND	TOH.TOH_TO_LEVEL_NUMBER &gt; 0
+			)
+		) A</value>
+  </data>
+  <data name="GetTransferOutDetailByDocumentNumberCommandText" xml:space="preserve">
+    <value>SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+SET NOCOUNT ON;
+
+SELECT	TOP 100 PERCENT
+			SenderLevelNumber		=	A.SenderLevelNumber
+		,	SenderOrganizationCode	=	A.SenderOrganizationCode
+		,	SenderDocumentNumber	=	A.SenderDocumentNumber
+		,	ItemCode				=	A.ItemCode
+		,	ItemName				=	B.ItemName
+		,	TransferQuantity		=	A.TransferQuantity
+		,	TransferUnit			=	A.TransferUnit
+		,	CostPrice				=	A.CostPrice
+		,	TransferValue			=	CAST(A.TransferQuantity * A.CostPrice AS decimal(19,4))
+FROM	(
+			SELECT	TOP 100 PERCENT
+						SenderLevelNumber		=	CAST(T.TOD_LEVEL_NUMBER AS int)
+					,	SenderOrganizationCode	=	T.TOD_ORG_CD
+					,	SenderDocumentNumber	=	T.TOD_DOC_NO
+					,	ItemCode				=	T.TOD_ITM_CD
+					,	TransferQuantity		=	CAST(ISNULL(T.TOD_TRAN_QTY, 0) AS decimal(19,4))
+					,	TransferUnit			=	T.TOD_UOM_CD
+					,	CostPrice				=	CAST(ISNULL(T.TOD_COST_PRICE, 0) AS decimal(19,4))
+			FROM	TRANSFER_OUT_DTL T
+		) A
+		INNER JOIN (
+			SELECT	TOP 100 PERCENT
+						ItemCode	=	T.ITM_CD
+					,	ItemName	=	T.ITM_NAME
+			FROM	ITEM_MST T
+		) B
+		ON
+			A.ItemCode = B.ItemCode
+WHERE	(
+		T.TOD_ORG_CD = @OrganizationCode
+	AND	T.TOD_DOC_NO = @DocumentNumber
+)</value>
+  </data>
+  <data name="GetItemByDivisionCodeCommandText" xml:space="preserve">
+    <value>SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+SET NOCOUNT ON;
+
+SELECT	TOP 100 PERCENT
+			DivisionCode		=	A.DivisionCode
+		,	OldItemCode			=	A.OldItemCode
+		,	ItemCode			=	A.ItemCode
+		,	ItemName			=	A.ItemName
+		,	StockUnit			=	A.StockUnit
+		,	PurchaseUnit		=	A.PurchaseUnit
+		,	SalesUnit			=	A.SalesUnit
+FROM	(
+			SELECT	TOP 100 PERCENT
+						DivisionCode		=	T.ITM_DIV_CD
+					,	OldItemCode			=	ISNULL(T.ITM_OLD_ITM_CD, '')
+					,	ItemCode			=	T.ITM_CD
+					,	ItemName			=	T.ITM_NAME
+					,	StockUnit			=	ISNULL(T.ITM_STOCK_UOM, '')
+					,	PurchaseUnit		=	ISNULL(T.ITM_PURCHASE_UOM, '')
+					,	SalesUnit			=	ISNULL(T.ITM_SALES_UOM, '')
+			FROM	ITEM_MST T
+			WHERE	(
+				T.ITM_DIV_CD = @DivisionCode
+			)
+		) A
+		INNER JOIN (
+			SELECT	TOP 100 PERCENT
+					DivisionCode	=	T.DIV_ID
+			FROM	DIVISION_MST T
+			WHERE	(
+				T.DIV_ID = @DivisionCode
+			)
+		) B
+		ON
+			A.DivisionCode = B.DivisionCode</value>
+  </data>
+  <data name="GetItemBarcodeByDeliveryNoteCommandText" xml:space="preserve">
+    <value>SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+SET NOCOUNT ON;
+
+DECLARE @DeliveryNote TABLE (
+		LevelNumber				int
+	,	OrganizationCode		nvarchar(3)
+	,	DeliveryNoteNumber		nvarchar(13)
+	,	ItemCode				nvarchar(40)
+	,	Quantity				decimal(19,4)
+)
+INSERT INTO @DeliveryNote
+SELECT	TOP 100 PERCENT
+			LevelNumber				=	T.DCD_LEVEL_NUMBER
+		,	OrganizationCode		=	T.DCD_ORG_CD
+		,	DeliveryNoteNumber		=	T.DCD_DOC_NO
+		,	ItemCode				=	T.DCD_ITM_CD
+		,	Quantity				=	ISNULL(T.DCD_QTY, 0)
+FROM	DELIVERY_CHELLAN_DTL T
+WHERE	(
+	T.DCD_DOC_NO = @DocumentNumber
+)
+
+DECLARE @BarcodeList TABLE (
+		DivisionCode                nvarchar(3)
+	,   ItemCode					nvarchar(40)
+	,   Barcode						nvarchar(40)
+	,   ItemName					nvarchar(200)
+	,   SalesUnit					nvarchar(3)
+	,	BarcodeType					int
+	,   SellPrice					decimal(19,4)
+)
+INSERT INTO @BarcodeList
+SELECT	DISTINCT
+		TOP 100 PERCENT
+		T.*
+FROM	(
+			SELECT	TOP 100 PERCENT
+					A.*, C.BSP_SELL_PRICE --999 as SELLPRICE--
+			FROM	(
+						SELECT	TOP 100 PERCENT
+								T.*
+						FROM	(
+							SELECT  TOP 100 PERCENT
+										DivisionCode	=	T.BICF_DIV_CD
+									,   ItemCode		=	T.BICF_ITEM_CODE
+									,   Barcode			=	T.BICF_BAR_CODE
+									,   ItemName		=   NULL
+									,   SalesUnit		=	T.BICF_UOM
+									,	BarcodeType		=	T.BICF_VENDOR_FLAG
+							FROM    BAR_ITEM_CODE T							
+							WHERE	(
+									ISNULL(T.BICF_UOM, '') &lt;&gt; ''
+								AND	T.BICF_STATUS = 'O'
+							)
+						) T
+					) A
+					INNER JOIN (
+						SELECT	TOP 100 PERCENT
+								ItemCode	=	T.ItemCode,
+								OrganizationCode = T.OrganizationCode 
+						FROM	@DeliveryNote T
+					) B
+					ON
+						A.ItemCode = B.ItemCode
+					-- new
+					INNER JOIN basic_sp_mst C
+					ON C.bsp_item_cd = B.ItemCode 
+						and C.BSP_ORG_CD = B.OrganizationCode
+						and C.BSP_METHOD = 1
+					-- new
+		) T
+
+DECLARE @TillArticle TABLE (
+		DivisionCode	nvarchar(3)
+	,	OldItemCode		nvarchar(40)
+	,   ItemCode		nvarchar(40)
+	,   Barcode			nvarchar(40)
+	,   ItemName		nvarchar(200)
+	,   SalesUnit		nvarchar(3)
+	,   SellPrice		decimal(19,4)
+)
+
+INSERT INTO @TillArticle
+SELECT  TOP 100 PERCENT
+			DivisionCode	=	T.DivisionCode
+		,	OldItemCode		=	NULL
+		,   ItemCode		=	T.ItemCode
+		,   Barcode			=	T.Barcode
+		,   ItemName		=   NULL
+		,   SalesUnit		=	T.SalesUnit
+		,   SellPrice		=	T.SellPrice
+FROM    @BarcodeList T
+WHERE	(
+	T.BarcodeType = 2 -- Has Vendor Barcode
+)
+
+INSERT INTO @TillArticle
+SELECT  TOP 100 PERCENT
+			DivisionCode	=	T.DivisionCode
+		,	OldItemCode		=	NULL
+		,   ItemCode		=	T.ItemCode
+		,   Barcode			=	T.Barcode
+		,   ItemName		=   NULL
+		,   SalesUnit		=	T.SalesUnit
+		,   SellPrice		=	T.SellPrice
+FROM    (
+			SELECT  TOP 100 PERCENT
+					A.*
+			FROM    @BarcodeList A
+			WHERE	(
+				A.BarcodeType = 0 -- Doesn't has Vendor Barcode
+				AND (
+					A.ItemCode NOT IN (
+						SELECT	TOP 100 PERCENT
+								B.ItemCode
+						FROM	@TillArticle B
+					)
+				)
+			)
+		) T
+
+UPDATE	@TillArticle
+SET			OldItemCode		=	T.ITM_OldItemCode
+		,	ItemName		=	T.ITM_ItemName
+FROM	(
+			SELECT	TOP 100 PERCENT
+					A.*
+			FROM	(
+						SELECT	TOP 100 PERCENT
+								T.*
+						FROM	(
+									SELECT  TOP 100 PERCENT
+												ITM_DivisionCode	=   T.ITM_DIV_CD
+											,	ITM_OldItemCode		=	T.ITM_OLD_ITM_CD
+											,   ITM_ItemCode		=   T.ITM_CD
+											,   ITM_ItemName		=   T.ITM_NAME
+									FROM    ITEM_MST T
+								) T
+					) A
+					INNER JOIN (
+						SELECT	TOP 100 PERCENT
+									DivisionCode	=	T.DivisionCode
+								,	ItemCode		=	T.ItemCode
+						FROM	@TillArticle T
+					) B
+					ON
+							A.ITM_DivisionCode = B.DivisionCode
+						AND A.ITM_ItemCode = B.ItemCode
+		) T
+WHERE	(
+		DivisionCode = T.ITM_DivisionCode
+	AND ItemCode = T.ITM_ItemCode
+)
+
+SELECT	TOP 100 PERCENT
+			T.*
+FROM	(
+			SELECT	TOP 100 PERCENT
+						DivisionCode			=	B.DivisionCode
+					,	OldItemCode				=	B.OldItemCode
+					,	ItemCode				=	B.ItemCode
+					,	Barcode					=	B.Barcode
+					,	ItemName				=	B.ItemName
+					,	Quantity				=	A.Quantity
+					,	SalesUnit				=	B.SalesUnit
+					,   SellPrice				=	B.SellPrice
+			FROM	(
+						SELECT	TOP 100 PERCENT
+								T.*
+						FROM	@DeliveryNote T
+					) A
+					INNER JOIN (
+						SELECT	TOP 100 PERCENT
+								T.*
+						FROM	@TillArticle T
+						WHERE	(
+							T.ItemName IS NOT NULL
+						)
+					) B
+					ON
+						A.ItemCode = B.ItemCode
+		) T</value>
+  </data>
+  <data name="GetItemBarcodeByTransferOutCommandText" xml:space="preserve">
+    <value>SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+SET NOCOUNT ON;
+
+DECLARE @TransferOut TABLE (
+		SenderLevelNumber			int
+	,	SenderOrganizationCode		nvarchar(3)
+	,	SenderDocumentNumber		nvarchar(13)
+	,	ItemCode					nvarchar(40)
+	,	Quantity					decimal(19,4)
+)
+INSERT INTO @TransferOut
+SELECT	TOP 100 PERCENT
+			SenderLevelNumber		=	T.TOD_LEVEL_NUMBER
+		,	SenderOrganizationCode	=	T.TOD_ORG_CD
+		,	SenderDocumentNumber	=	T.TOD_DOC_NO
+		,	ItemCode				=	T.TOD_ITM_CD
+		,	Quantity				=	ISNULL(T.TOD_TRAN_QTY, 0)
+FROM	TRANSFER_OUT_DTL T
+WHERE	(
+	T.TOD_DOC_NO = @DocumentNumber
+)
+
+DECLARE @BarcodeList TABLE (
+		DivisionCode                nvarchar(3)
+	,   ItemCode					nvarchar(40)
+	,   Barcode						nvarchar(40)
+	,   ItemName					nvarchar(200)
+	,   SalesUnit					nvarchar(3)
+	,	BarcodeType					int
+	,	SellPrice					decimal(19, 4)
+)
+INSERT INTO @BarcodeList
+SELECT	DISTINCT
+		TOP 100 PERCENT
+		T.*
+FROM	(
+			SELECT	TOP 100 PERCENT
+					A.*, C.BSP_SELL_PRICE 
+			FROM	(
+						SELECT	TOP 100 PERCENT
+								T.*
+						FROM	(
+							SELECT  TOP 100 PERCENT
+										DivisionCode	=	T.BICF_DIV_CD
+									,   ItemCode		=	T.BICF_ITEM_CODE
+									,   Barcode			=	T.BICF_BAR_CODE
+									,   ItemName		=   NULL
+									,   SalesUnit		=	T.BICF_UOM
+									,	BarcodeType		=	T.BICF_VENDOR_FLAG
+							FROM    BAR_ITEM_CODE T
+							WHERE	(
+									ISNULL(T.BICF_UOM, '') &lt;&gt; ''
+								AND	T.BICF_STATUS = 'O'
+							)
+						) T
+					) A
+					INNER JOIN (
+						SELECT	TOP 100 PERCENT
+								ItemCode	=	T.ItemCode,
+								SenderOrganizationCode	=	T.SenderOrganizationCode
+						FROM	@TransferOut T
+					) B
+					ON
+						A.ItemCode = B.ItemCode
+					-- new
+					INNER JOIN basic_sp_mst C
+					ON C.bsp_item_cd = B.ItemCode 
+						and C.BSP_ORG_CD = B.SenderOrganizationCode
+						and BSP_METHOD = 1
+					-- new
+		) T
+
+DECLARE @TillArticle TABLE (
+		DivisionCode	nvarchar(3)
+	,	OldItemCode		nvarchar(40)
+	,   ItemCode		nvarchar(40)
+	,   Barcode			nvarchar(40)
+	,   ItemName		nvarchar(200)
+	,   SalesUnit		nvarchar(3)
+	,   SellPrice		decimal(19,4)
+)
+
+INSERT INTO @TillArticle
+SELECT  TOP 100 PERCENT
+			DivisionCode	=	T.DivisionCode
+		,	OldItemCode		=	NULL
+		,   ItemCode		=	T.ItemCode
+		,   Barcode			=	T.Barcode
+		,   ItemName		=   NULL
+		,   SalesUnit		=	T.SalesUnit
+		,   SellPrice		=	T.SellPrice
+FROM    @BarcodeList T
+WHERE	(
+	T.BarcodeType = 2 -- Has Vendor Barcode
+)
+
+INSERT INTO @TillArticle
+SELECT  TOP 100 PERCENT
+			DivisionCode	=	T.DivisionCode
+		,	OldItemCode		=	NULL
+		,   ItemCode		=	T.ItemCode
+		,   Barcode			=	T.Barcode
+		,   ItemName		=   NULL
+		,   SalesUnit		=	T.SalesUnit
+		,   SellPrice		=	T.SellPrice
+FROM    (
+			SELECT  TOP 100 PERCENT
+					A.*
+			FROM    @BarcodeList A
+			WHERE	(
+				A.BarcodeType = 0 -- Doesn't has Vendor Barcode
+				AND (
+					A.ItemCode NOT IN (
+						SELECT	TOP 100 PERCENT
+								B.ItemCode
+						FROM	@TillArticle B
+					)
+				)
+			)
+		) T
+
+UPDATE	@TillArticle
+SET			OldItemCode		=	T.ITM_OldItemCode
+		,	ItemName		=	T.ITM_ItemName
+FROM	(
+			SELECT	TOP 100 PERCENT
+					A.*
+			FROM	(
+						SELECT	TOP 100 PERCENT
+								T.*
+						FROM	(
+									SELECT  TOP 100 PERCENT
+												ITM_DivisionCode	=   T.ITM_DIV_CD
+											,	ITM_OldItemCode		=	T.ITM_OLD_ITM_CD
+											,   ITM_ItemCode		=   T.ITM_CD
+											,   ITM_ItemName		=   T.ITM_NAME
+									FROM    ITEM_MST T
+								) T
+					) A
+					INNER JOIN (
+						SELECT	TOP 100 PERCENT
+									DivisionCode	=	T.DivisionCode
+								,	ItemCode		=	T.ItemCode
+						FROM	@TillArticle T
+					) B
+					ON
+							A.ITM_DivisionCode = B.DivisionCode
+						AND A.ITM_ItemCode = B.ItemCode
+		) T
+WHERE	(
+		DivisionCode = T.ITM_DivisionCode
+	AND ItemCode = T.ITM_ItemCode
+)
+
+SELECT	TOP 100 PERCENT
+			T.*
+FROM	(
+			SELECT	TOP 100 PERCENT
+						DivisionCode			=	B.DivisionCode
+					,	OldItemCode				=	B.OldItemCode
+					,	ItemCode				=	B.ItemCode
+					,	Barcode					=	B.Barcode
+					,	ItemName				=	B.ItemName
+					,	Quantity				=	A.Quantity
+					,	SalesUnit				=	B.SalesUnit
+					,   SellPrice				=	B.SellPrice
+			FROM	(
+						SELECT	TOP 100 PERCENT
+								T.*
+						FROM	@TransferOut T
+					) A
+					INNER JOIN (
+						SELECT	TOP 100 PERCENT
+								T.*
+						FROM	@TillArticle T
+						WHERE	(
+							T.ItemName IS NOT NULL
+						)
+					) B
+					ON
+						A.ItemCode = B.ItemCode
+		) T</value>
+  </data>
+  <data name="GetItemBarcodeByDivisionCommandText" xml:space="preserve">
+    <value>SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+SET NOCOUNT ON;
+
+DECLARE @BarcodeList TABLE (
+		DivisionCode                nvarchar(3)
+	,   ItemCode					nvarchar(40)
+	,   Barcode						nvarchar(40)
+	,   ItemName					nvarchar(200)
+	,   SalesUnit					nvarchar(3)
+	,	BarcodeType					int
+	,   SellPrice					decimal(19,4)
+)
+INSERT INTO @BarcodeList
+SELECT	DISTINCT
+		TOP 100 PERCENT
+			DivisionCode	=	T.BICF_DIV_CD
+		,   ItemCode		=	T.BICF_ITEM_CODE
+		,   Barcode			=	T.BICF_BAR_CODE
+		,   ItemName		=   NULL
+		,   SalesUnit		=	T.BICF_UOM
+		,	BarcodeType		=	T.BICF_VENDOR_FLAG
+		,	SellPrice		=	C.BSP_SELL_PRICE
+FROM    BAR_ITEM_CODE T
+	-- new
+	INNER JOIN basic_sp_mst C
+	ON C.bsp_item_cd = T.BICF_ITEM_CODE 
+		and C.BSP_ORG_CD = @DocumentNumber
+		and BSP_METHOD = 1
+	-- new
+WHERE	(
+		ISNULL(T.BICF_UOM, '') &lt;&gt; ''
+	AND	T.BICF_STATUS = 'O'
+	AND T.BICF_DIV_CD = @DivisionCode
+)
+
+DECLARE @TillArticle TABLE (
+		DivisionCode	nvarchar(3)
+	,	OldItemCode		nvarchar(40)
+	,   ItemCode		nvarchar(40)
+	,   Barcode			nvarchar(40)
+	,   ItemName		nvarchar(200)
+	,   SalesUnit		nvarchar(3)
+	,   SellPrice		decimal(19,4)
+)
+
+INSERT INTO @TillArticle
+SELECT  TOP 100 PERCENT
+			DivisionCode	=	T.DivisionCode
+		,	OldItemCode		=	NULL
+		,   ItemCode		=	T.ItemCode
+		,   Barcode			=	T.Barcode
+		,   ItemName		=   NULL
+		,   SalesUnit		=	T.SalesUnit
+		,   SellPrice		=	T.SellPrice
+FROM    @BarcodeList T
+WHERE	(
+	T.BarcodeType = 2 -- Has Vendor Barcode
+)
+
+INSERT INTO @TillArticle
+SELECT  TOP 100 PERCENT
+			DivisionCode	=	T.DivisionCode
+		,	OldItemCode		=	NULL
+		,   ItemCode		=	T.ItemCode
+		,   Barcode			=	T.Barcode
+		,   ItemName		=   NULL
+		,   SalesUnit		=	T.SalesUnit
+		,   SellPrice		=	T.SellPrice
+FROM    (
+			SELECT  TOP 100 PERCENT
+					A.*
+			FROM    @BarcodeList A
+			WHERE	(
+				A.BarcodeType = 0 -- Doesn't has Vendor Barcode
+				AND (
+					A.ItemCode NOT IN (
+						SELECT	TOP 100 PERCENT
+								B.ItemCode
+						FROM	@TillArticle B
+					)
+				)
+			)
+		) T
+
+UPDATE	@TillArticle
+SET			OldItemCode		=	T.ITM_OldItemCode
+		,	ItemName		=	T.ITM_ItemName
+FROM	(
+			SELECT	TOP 100 PERCENT
+					A.*
+			FROM	(
+						SELECT	TOP 100 PERCENT
+								T.*
+						FROM	(
+									SELECT  TOP 100 PERCENT
+												ITM_DivisionCode	=   T.ITM_DIV_CD
+											,	ITM_OldItemCode		=	T.ITM_OLD_ITM_CD
+											,   ITM_ItemCode		=   T.ITM_CD
+											,   ITM_ItemName		=   T.ITM_NAME
+									FROM    ITEM_MST T
+								) T
+					) A
+					INNER JOIN (
+						SELECT	TOP 100 PERCENT
+									DivisionCode	=	T.DivisionCode
+								,	ItemCode		=	T.ItemCode
+						FROM	@TillArticle T
+					) B
+					ON
+							A.ITM_DivisionCode = B.DivisionCode
+						AND A.ITM_ItemCode = B.ItemCode
+		) T
+WHERE	(
+		DivisionCode = T.ITM_DivisionCode
+	AND ItemCode = T.ITM_ItemCode
+)
+
+SELECT	TOP 100 PERCENT
+			DivisionCode			=	T.DivisionCode
+		,	OldItemCode				=	T.OldItemCode
+		,	ItemCode				=	T.ItemCode
+		,	Barcode					=	T.Barcode
+		,	ItemName				=	T.ItemName
+		,	Quantity				=	1
+		,	SalesUnit				=	T.SalesUnit
+		,   SellPrice				=	T.SellPrice
+FROM	@TillArticle T
+WHERE	(
+	T.ItemName IS NOT NULL
+)</value>
+  </data>
+  <data name="GetDeliveryNoteHeaderCommandText" xml:space="preserve">
+    <value>SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+SET NOCOUNT ON;
+
+SELECT	TOP 100 PERCENT
+		A.*
+FROM	(
+			SELECT	TOP 100 PERCENT
+						LevelNumber			=	A.LevelNumber
+					,	OrganizationCode	=	A.OrganizationCode
+					,	OrganizationName	=	B.OrganizationName
+					,	DocumentNumber		=	A.DocumentNumber
+					,	DocumentDateTime	=	A.DocumentDateTime
+					,	CustomerCode		=	A.CustomerCode
+					,	CustomerName		=	C.CustomerName
+					,	SalesOrderNumber	=	A.SalesOrderNumber
+			FROM	(
+				SELECT	TOP 100 PERCENT
+							LevelNumber			=	CAST(T.DCH_LEVEL_NUMBER AS int)
+						,	OrganizationCode	=	T.DCH_ORG_CD
+						,	DocumentNumber		=	T.DCH_DOC_NO
+						,	DocumentDateTime	=	T.DCH_DOC_DT
+						,	CustomerCode		=	T.DCH_CUST_CD
+						,	SalesOrderNumber	=	T.DCH_SOH_SO_NO
+				FROM	DELIVERY_CHELLAN_HDR T
+			) A
+			INNER JOIN (
+				SELECT	TOP 100 PERCENT
+							OrganizationCode	=	T.ORG_CD
+						,	OrganizationName	=	T.ORG_NAME
+				FROM	ORGANIZATION_MST T
+			) B
+			ON
+				A.OrganizationCode = B.OrganizationCode
+			INNER JOIN (
+				SELECT	TOP 100 PERCENT
+							CustomerCode	=	T.CUS_CD
+						,	CustomerName	=	T.CUS_FNAME +
+												(CASE 
+													WHEN ISNULL(CUS_MNAME, '') &lt;&gt; '' THEN
+														' ' + CUS_MNAME
+													ELSE ''
+												END) +
+												(CASE 
+													WHEN ISNULL(CUS_LNAME, '') &lt;&gt; '' THEN
+														' ' + CUS_LNAME
+													ELSE ''
+												END)
+				FROM	CUSTOMER_MST T
+			) C
+			ON
+				A.CustomerCode = C.CustomerCode
+		) A</value>
+  </data>
+  <data name="GetItemBarcodeByPurchaseOrderCommandText" xml:space="preserve">
+    <value>SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+SET NOCOUNT ON;
+
+DECLARE @PurchaseOrder TABLE (
+		LevelNumber				int
+	,	OrganizationCode		nvarchar(3)
+	,	PurchaseOrderNumber		nvarchar(13)
+	,	ItemCode				nvarchar(40)
+	,	Quantity				decimal(19,4)
+)
+INSERT INTO @PurchaseOrder
+SELECT	TOP 100 PERCENT
+			LevelNumber				=	T.POD_LEVEL_NUMBER
+		,	OrganizationCode		=	T.POD_ORG_CD
+		,	PurchaseOrderNumber		=	T.POD_PO_NO
+		,	ItemCode				=	T.POD_ITM_CD
+		,	Quantity				=	ISNULL(T.POD_QTY, 0)
+FROM	PURCHASE_ORDER_DTL T
+WHERE	(
+	T.POD_PO_NO = @DocumentNumber
+)
+
+DECLARE @BarcodeList TABLE (
+		DivisionCode                nvarchar(3)
+	,   ItemCode					nvarchar(40)
+	,   Barcode						nvarchar(40)
+	,   ItemName					nvarchar(200)
+	,   SalesUnit					nvarchar(3)
+	,	BarcodeType					int
+	,   SellPrice					decimal(19,4)
+)
+INSERT INTO @BarcodeList
+SELECT	DISTINCT
+		TOP 100 PERCENT
+		T.*
+FROM	(
+			SELECT	TOP 100 PERCENT
+					A.*, C.BSP_SELL_PRICE --999 as SELLPRICE--
+			FROM	(
+						SELECT	TOP 100 PERCENT
+								T.*
+						FROM	(
+							SELECT  TOP 100 PERCENT
+										DivisionCode	=	T.BICF_DIV_CD
+									,   ItemCode		=	T.BICF_ITEM_CODE
+									,   Barcode			=	T.BICF_BAR_CODE
+									,   ItemName		=   NULL
+									,   SalesUnit		=	T.BICF_UOM
+									,	BarcodeType		=	T.BICF_VENDOR_FLAG
+							FROM    BAR_ITEM_CODE T							
+							WHERE	(
+									ISNULL(T.BICF_UOM, '') &lt;&gt; ''
+								AND	T.BICF_STATUS = 'O'
+							)
+						) T
+					) A
+					INNER JOIN (
+						SELECT	TOP 100 PERCENT
+								ItemCode	=	T.ItemCode,
+								OrganizationCode = T.OrganizationCode 
+						FROM	@PurchaseOrder T
+					) B
+					ON
+						A.ItemCode = B.ItemCode
+					-- new
+					INNER JOIN basic_sp_mst C
+					ON C.bsp_item_cd = B.ItemCode 
+						and C.BSP_ORG_CD = B.OrganizationCode
+						and C.BSP_METHOD = 1
+					-- new
+		) T
+
+DECLARE @TillArticle TABLE (
+		DivisionCode	nvarchar(3)
+	,	OldItemCode		nvarchar(40)
+	,   ItemCode		nvarchar(40)
+	,   Barcode			nvarchar(40)
+	,   ItemName		nvarchar(200)
+	,   SalesUnit		nvarchar(3)
+	,   SellPrice		decimal(19,4)
+)
+
+INSERT INTO @TillArticle
+SELECT  TOP 100 PERCENT
+			DivisionCode	=	T.DivisionCode
+		,	OldItemCode		=	NULL
+		,   ItemCode		=	T.ItemCode
+		,   Barcode			=	T.Barcode
+		,   ItemName		=   NULL
+		,   SalesUnit		=	T.SalesUnit
+		,   SellPrice		=	T.SellPrice
+FROM    @BarcodeList T
+WHERE	(
+	T.BarcodeType = 2 -- Has Vendor Barcode
+)
+
+INSERT INTO @TillArticle
+SELECT  TOP 100 PERCENT
+			DivisionCode	=	T.DivisionCode
+		,	OldItemCode		=	NULL
+		,   ItemCode		=	T.ItemCode
+		,   Barcode			=	T.Barcode
+		,   ItemName		=   NULL
+		,   SalesUnit		=	T.SalesUnit
+		,   SellPrice		=	T.SellPrice
+FROM    (
+			SELECT  TOP 100 PERCENT
+					A.*
+			FROM    @BarcodeList A
+			WHERE	(
+				A.BarcodeType = 0 -- Doesn't has Vendor Barcode
+				AND (
+					A.ItemCode NOT IN (
+						SELECT	TOP 100 PERCENT
+								B.ItemCode
+						FROM	@TillArticle B
+					)
+				)
+			)
+		) T
+
+UPDATE	@TillArticle
+SET			OldItemCode		=	T.ITM_OldItemCode
+		,	ItemName		=	T.ITM_ItemName
+FROM	(
+			SELECT	TOP 100 PERCENT
+					A.*
+			FROM	(
+						SELECT	TOP 100 PERCENT
+								T.*
+						FROM	(
+									SELECT  TOP 100 PERCENT
+												ITM_DivisionCode	=   T.ITM_DIV_CD
+											,	ITM_OldItemCode		=	T.ITM_OLD_ITM_CD
+											,   ITM_ItemCode		=   T.ITM_CD
+											,   ITM_ItemName		=   T.ITM_NAME
+									FROM    ITEM_MST T
+								) T
+					) A
+					INNER JOIN (
+						SELECT	TOP 100 PERCENT
+									DivisionCode	=	T.DivisionCode
+								,	ItemCode		=	T.ItemCode
+						FROM	@TillArticle T
+					) B
+					ON
+							A.ITM_DivisionCode = B.DivisionCode
+						AND A.ITM_ItemCode = B.ItemCode
+		) T
+WHERE	(
+		DivisionCode = T.ITM_DivisionCode
+	AND ItemCode = T.ITM_ItemCode
+)
+
+SELECT	TOP 100 PERCENT
+			T.*
+FROM	(
+			SELECT	TOP 100 PERCENT
+						DivisionCode			=	B.DivisionCode
+					,	OldItemCode				=	B.OldItemCode
+					,	ItemCode				=	B.ItemCode
+					,	Barcode					=	B.Barcode
+					,	ItemName				=	B.ItemName
+					,	Quantity				=	A.Quantity
+					,	SalesUnit				=	B.SalesUnit
+					,   SellPrice				=	B.SellPrice
+			FROM	(
+						SELECT	TOP 100 PERCENT
+								T.*
+						FROM	@PurchaseOrder T
+					) A
+					INNER JOIN (
+						SELECT	TOP 100 PERCENT
+								T.*
+						FROM	@TillArticle T
+						WHERE	(
+							T.ItemName IS NOT NULL
+						)
+					) B
+					ON
+						A.ItemCode = B.ItemCode
+		) T</value>
+  </data>
+  <data name="GetPurchaseOrderHeaderCommandText" xml:space="preserve">
+    <value>SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+SET NOCOUNT ON;
+
+SELECT	TOP 100 PERCENT
+		A.*
+FROM	(
+			SELECT	TOP 100 PERCENT
+						LevelNumber			=	A.LevelNumber
+					,	OrganizationCode	=	A.OrganizationCode
+					,	OrganizationName	=	B.OrganizationName
+					,	PONumber			=	A.DocumentNumber
+					,	PODate				=	A.DocumentDateTime
+			FROM	(
+				SELECT	TOP 100 PERCENT
+							LevelNumber			=	CAST(T.POH_LEVEL_NUMBER AS int)
+						,	OrganizationCode	=	T.POH_ORG_CD
+						,	DocumentNumber		=	T.POH_PO_NO
+						,	DocumentDateTime	=	T.POH_PO_DT
+				FROM	PURCHASE_ORDER_HDR T
+			) A
+			INNER JOIN (
+				SELECT	TOP 100 PERCENT
+							OrganizationCode	=	T.ORG_CD
+						,	OrganizationName	=	T.ORG_NAME
+				FROM	ORGANIZATION_MST T
+			) B
+			ON
+				A.OrganizationCode = B.OrganizationCode
+		) A</value>
+  </data>
+  <data name="GetSalesOrderHeaderCommandText" xml:space="preserve">
+    <value>SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+SET NOCOUNT ON;
+
+SELECT	TOP 100 PERCENT
+		A.*
+FROM	(
+			SELECT	TOP 100 PERCENT
+						LevelNumber			=	A.LevelNumber
+					,	OrganizationCode	=	A.OrganizationCode
+					,	OrganizationName	=	B.OrganizationName
+					,	DocumentNumber		=	A.DocumentNumber
+					,	DocumentDate		=	A.DocumentDateTime
+			FROM	(
+				SELECT	TOP 100 PERCENT
+							LevelNumber			=	CAST(T.SOH_LEVEL_NUMBER AS int)
+						,	OrganizationCode	=	T.SOH_ORG_CD
+						,	DocumentNumber		=	T.SOH_DOC_NO
+						,	DocumentDateTime	=	T.SOH_DOC_DT
+				FROM	SALES_ORDER_HDR T
+			) A
+			INNER JOIN (
+				SELECT	TOP 100 PERCENT
+							OrganizationCode	=	T.ORG_CD
+						,	OrganizationName	=	T.ORG_NAME
+				FROM	ORGANIZATION_MST T
+			) B
+			ON
+				A.OrganizationCode = B.OrganizationCode
+		) A</value>
+  </data>
+  <data name="GetItemBarcodeBySalesOrderCommandText" xml:space="preserve">
+    <value>SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+SET NOCOUNT ON;
+
+DECLARE @SalesOrder TABLE (
+		LevelNumber				int
+	,	OrganizationCode		nvarchar(3)
+	,	SalesOrderNumber		nvarchar(13)
+	,	ItemCode				nvarchar(40)
+	,	Quantity				decimal(19,4)
+)
+INSERT INTO @SalesOrder
+SELECT	TOP 100 PERCENT
+			LevelNumber				=	T.SOD_LEVEL_NUMBER
+		,	OrganizationCode		=	T.SOD_ORG_CD
+		,	PurchaseOrderNumber		=	T.SOD_DOC_NO
+		,	ItemCode				=	T.SOD_ITM_CD
+		,	Quantity				=	ISNULL(T.SOD_QTY, 0)
+FROM	SALES_ORDER_DTL T
+WHERE	(
+	T.SOD_DOC_NO = @DocumentNumber
+)
+
+DECLARE @BarcodeList TABLE (
+		DivisionCode                nvarchar(3)
+	,   ItemCode					nvarchar(40)
+	,   Barcode						nvarchar(40)
+	,   ItemName					nvarchar(200)
+	,   SalesUnit					nvarchar(3)
+	,	BarcodeType					int
+	,   SellPrice					decimal(19,4)
+)
+INSERT INTO @BarcodeList
+SELECT	DISTINCT
+		TOP 100 PERCENT
+		T.*
+FROM	(
+			SELECT	TOP 100 PERCENT
+					A.*, C.BSP_SELL_PRICE --999 as SELLPRICE--
+			FROM	(
+						SELECT	TOP 100 PERCENT
+								T.*
+						FROM	(
+							SELECT  TOP 100 PERCENT
+										DivisionCode	=	T.BICF_DIV_CD
+									,   ItemCode		=	T.BICF_ITEM_CODE
+									,   Barcode			=	T.BICF_BAR_CODE
+									,   ItemName		=   NULL
+									,   SalesUnit		=	T.BICF_UOM
+									,	BarcodeType		=	T.BICF_VENDOR_FLAG
+							FROM    BAR_ITEM_CODE T							
+							WHERE	(
+									ISNULL(T.BICF_UOM, '') &lt;&gt; ''
+								AND	T.BICF_STATUS = 'O'
+							)
+						) T
+					) A
+					INNER JOIN (
+						SELECT	TOP 100 PERCENT
+								ItemCode	=	T.ItemCode,
+								OrganizationCode = T.OrganizationCode 
+						FROM	@SalesOrder T
+					) B
+					ON
+						A.ItemCode = B.ItemCode
+					-- new
+					INNER JOIN basic_sp_mst C
+					ON C.bsp_item_cd = B.ItemCode 
+						and C.BSP_ORG_CD = B.OrganizationCode
+						and C.BSP_METHOD = 1
+					-- new
+		) T
+
+DECLARE @TillArticle TABLE (
+		DivisionCode	nvarchar(3)
+	,	OldItemCode		nvarchar(40)
+	,   ItemCode		nvarchar(40)
+	,   Barcode			nvarchar(40)
+	,   ItemName		nvarchar(200)
+	,   SalesUnit		nvarchar(3)
+	,   SellPrice		decimal(19,4)
+)
+
+INSERT INTO @TillArticle
+SELECT  TOP 100 PERCENT
+			DivisionCode	=	T.DivisionCode
+		,	OldItemCode		=	NULL
+		,   ItemCode		=	T.ItemCode
+		,   Barcode			=	T.Barcode
+		,   ItemName		=   NULL
+		,   SalesUnit		=	T.SalesUnit
+		,   SellPrice		=	T.SellPrice
+FROM    @BarcodeList T
+WHERE	(
+	T.BarcodeType = 2 -- Has Vendor Barcode
+)
+
+INSERT INTO @TillArticle
+SELECT  TOP 100 PERCENT
+			DivisionCode	=	T.DivisionCode
+		,	OldItemCode		=	NULL
+		,   ItemCode		=	T.ItemCode
+		,   Barcode			=	T.Barcode
+		,   ItemName		=   NULL
+		,   SalesUnit		=	T.SalesUnit
+		,   SellPrice		=	T.SellPrice
+FROM    (
+			SELECT  TOP 100 PERCENT
+					A.*
+			FROM    @BarcodeList A
+			WHERE	(
+				A.BarcodeType = 0 -- Doesn't has Vendor Barcode
+				AND (
+					A.ItemCode NOT IN (
+						SELECT	TOP 100 PERCENT
+								B.ItemCode
+						FROM	@TillArticle B
+					)
+				)
+			)
+		) T
+
+UPDATE	@TillArticle
+SET			OldItemCode		=	T.ITM_OldItemCode
+		,	ItemName		=	T.ITM_ItemName
+FROM	(
+			SELECT	TOP 100 PERCENT
+					A.*
+			FROM	(
+						SELECT	TOP 100 PERCENT
+								T.*
+						FROM	(
+									SELECT  TOP 100 PERCENT
+												ITM_DivisionCode	=   T.ITM_DIV_CD
+											,	ITM_OldItemCode		=	T.ITM_OLD_ITM_CD
+											,   ITM_ItemCode		=   T.ITM_CD
+											,   ITM_ItemName		=   T.ITM_NAME
+									FROM    ITEM_MST T
+								) T
+					) A
+					INNER JOIN (
+						SELECT	TOP 100 PERCENT
+									DivisionCode	=	T.DivisionCode
+								,	ItemCode		=	T.ItemCode
+						FROM	@TillArticle T
+					) B
+					ON
+							A.ITM_DivisionCode = B.DivisionCode
+						AND A.ITM_ItemCode = B.ItemCode
+		) T
+WHERE	(
+		DivisionCode = T.ITM_DivisionCode
+	AND ItemCode = T.ITM_ItemCode
+)
+
+SELECT	TOP 100 PERCENT
+			T.*
+FROM	(
+			SELECT	TOP 100 PERCENT
+						DivisionCode			=	B.DivisionCode
+					,	OldItemCode				=	B.OldItemCode
+					,	ItemCode				=	B.ItemCode
+					,	Barcode					=	B.Barcode
+					,	ItemName				=	B.ItemName
+					,	Quantity				=	A.Quantity
+					,	SalesUnit				=	B.SalesUnit
+					,   SellPrice				=	B.SellPrice
+			FROM	(
+						SELECT	TOP 100 PERCENT
+								T.*
+						FROM	@SalesOrder T
+					) A
+					INNER JOIN (
+						SELECT	TOP 100 PERCENT
+								T.*
+						FROM	@TillArticle T
+						WHERE	(
+							T.ItemName IS NOT NULL
+						)
+					) B
+					ON
+						A.ItemCode = B.ItemCode
+		) T</value>
+  </data>
+  <data name="GetGRNHeaderCommandText" xml:space="preserve">
+    <value>SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+SET NOCOUNT ON;
+
+SELECT	TOP 100 PERCENT
+		A.*
+FROM	(
+			SELECT	TOP 100 PERCENT
+						LevelNumber			=	A.LevelNumber
+					,	OrganizationCode	=	A.OrganizationCode
+					,	OrganizationName	=	B.OrganizationName
+					,	DocumentNumber		=	A.DocumentNumber
+					,	DocumentDate		=	A.DocumentDateTime
+			FROM	(
+				SELECT	TOP 100 PERCENT
+							LevelNumber			=	CAST(T.GIH_LEVEL_NO AS int)
+						,	OrganizationCode	=	T.GIH_ORG_CD
+						,	DocumentNumber		=	T.GIH_DOC_NO
+						,	DocumentDateTime	=	T.GIH_DOC_DT
+				FROM	GOODS_RECEIPT_HDR T
+			) A
+			INNER JOIN (
+				SELECT	TOP 100 PERCENT
+							OrganizationCode	=	T.ORG_CD
+						,	OrganizationName	=	T.ORG_NAME
+				FROM	ORGANIZATION_MST T
+			) B
+			ON
+				A.OrganizationCode = B.OrganizationCode
+		) A</value>
+  </data>
+  <data name="GetItemBarcodeByGRNCommandText" xml:space="preserve">
+    <value>SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+SET NOCOUNT ON;
+
+DECLARE @GRN TABLE (
+		LevelNumber				int
+	,	OrganizationCode		nvarchar(3)
+	,	SalesOrderNumber		nvarchar(13)
+	,	ItemCode				nvarchar(40)
+	,	Quantity				decimal(19,4)
+)
+INSERT INTO @GRN
+SELECT	TOP 100 PERCENT
+			LevelNumber				=	T.GID_LEVEL_NUMBER
+		,	OrganizationCode		=	T.GID_ORG_CD
+		,	PurchaseOrderNumber		=	T.GID_DOC_NO
+		,	ItemCode				=	T.GID_ITM_CD
+		,	Quantity				=	ISNULL(T.GID_PO_QTY, 0)
+FROM	GOODS_RECEIPT_DTL T
+WHERE	(
+	T.GID_DOC_NO = @DocumentNumber
+)
+
+DECLARE @BarcodeList TABLE (
+		DivisionCode                nvarchar(3)
+	,   ItemCode					nvarchar(40)
+	,   Barcode						nvarchar(40)
+	,   ItemName					nvarchar(200)
+	,   SalesUnit					nvarchar(3)
+	,	BarcodeType					int
+	,   SellPrice					decimal(19,4)
+)
+INSERT INTO @BarcodeList
+SELECT	DISTINCT
+		TOP 100 PERCENT
+		T.*
+FROM	(
+			SELECT	TOP 100 PERCENT
+					A.*, C.BSP_SELL_PRICE --999 as SELLPRICE--
+			FROM	(
+						SELECT	TOP 100 PERCENT
+								T.*
+						FROM	(
+							SELECT  TOP 100 PERCENT
+										DivisionCode	=	T.BICF_DIV_CD
+									,   ItemCode		=	T.BICF_ITEM_CODE
+									,   Barcode			=	T.BICF_BAR_CODE
+									,   ItemName		=   NULL
+									,   SalesUnit		=	T.BICF_UOM
+									,	BarcodeType		=	T.BICF_VENDOR_FLAG
+							FROM    BAR_ITEM_CODE T							
+							WHERE	(
+									ISNULL(T.BICF_UOM, '') &lt;&gt; ''
+								AND	T.BICF_STATUS = 'O'
+							)
+						) T
+					) A
+					INNER JOIN (
+						SELECT	TOP 100 PERCENT
+								ItemCode	=	T.ItemCode,
+								OrganizationCode = T.OrganizationCode 
+						FROM	@GRN T
+					) B
+					ON
+						A.ItemCode = B.ItemCode
+					-- new
+					INNER JOIN basic_sp_mst C
+					ON C.bsp_item_cd = B.ItemCode 
+						and C.BSP_ORG_CD = B.OrganizationCode
+						and C.BSP_METHOD = 1
+					-- new
+		) T
+
+DECLARE @TillArticle TABLE (
+		DivisionCode	nvarchar(3)
+	,	OldItemCode		nvarchar(40)
+	,   ItemCode		nvarchar(40)
+	,   Barcode			nvarchar(40)
+	,   ItemName		nvarchar(200)
+	,   SalesUnit		nvarchar(3)
+	,   SellPrice		decimal(19,4)
+)
+
+INSERT INTO @TillArticle
+SELECT  TOP 100 PERCENT
+			DivisionCode	=	T.DivisionCode
+		,	OldItemCode		=	NULL
+		,   ItemCode		=	T.ItemCode
+		,   Barcode			=	T.Barcode
+		,   ItemName		=   NULL
+		,   SalesUnit		=	T.SalesUnit
+		,   SellPrice		=	T.SellPrice
+FROM    @BarcodeList T
+WHERE	(
+	T.BarcodeType = 2 -- Has Vendor Barcode
+)
+
+INSERT INTO @TillArticle
+SELECT  TOP 100 PERCENT
+			DivisionCode	=	T.DivisionCode
+		,	OldItemCode		=	NULL
+		,   ItemCode		=	T.ItemCode
+		,   Barcode			=	T.Barcode
+		,   ItemName		=   NULL
+		,   SalesUnit		=	T.SalesUnit
+		,   SellPrice		=	T.SellPrice
+FROM    (
+			SELECT  TOP 100 PERCENT
+					A.*
+			FROM    @BarcodeList A
+			WHERE	(
+				A.BarcodeType = 0 -- Doesn't has Vendor Barcode
+				AND (
+					A.ItemCode NOT IN (
+						SELECT	TOP 100 PERCENT
+								B.ItemCode
+						FROM	@TillArticle B
+					)
+				)
+			)
+		) T
+
+UPDATE	@TillArticle
+SET			OldItemCode		=	T.ITM_OldItemCode
+		,	ItemName		=	T.ITM_ItemName
+FROM	(
+			SELECT	TOP 100 PERCENT
+					A.*
+			FROM	(
+						SELECT	TOP 100 PERCENT
+								T.*
+						FROM	(
+									SELECT  TOP 100 PERCENT
+												ITM_DivisionCode	=   T.ITM_DIV_CD
+											,	ITM_OldItemCode		=	T.ITM_OLD_ITM_CD
+											,   ITM_ItemCode		=   T.ITM_CD
+											,   ITM_ItemName		=   T.ITM_NAME
+									FROM    ITEM_MST T
+								) T
+					) A
+					INNER JOIN (
+						SELECT	TOP 100 PERCENT
+									DivisionCode	=	T.DivisionCode
+								,	ItemCode		=	T.ItemCode
+						FROM	@TillArticle T
+					) B
+					ON
+							A.ITM_DivisionCode = B.DivisionCode
+						AND A.ITM_ItemCode = B.ItemCode
+		) T
+WHERE	(
+		DivisionCode = T.ITM_DivisionCode
+	AND ItemCode = T.ITM_ItemCode
+)
+
+SELECT	TOP 100 PERCENT
+			T.*
+FROM	(
+			SELECT	TOP 100 PERCENT
+						DivisionCode			=	B.DivisionCode
+					,	OldItemCode				=	B.OldItemCode
+					,	ItemCode				=	B.ItemCode
+					,	Barcode					=	B.Barcode
+					,	ItemName				=	B.ItemName
+					,	Quantity				=	A.Quantity
+					,	SalesUnit				=	B.SalesUnit
+					,   SellPrice				=	B.SellPrice
+			FROM	(
+						SELECT	TOP 100 PERCENT
+								T.*
+						FROM	@GRN T
+					) A
+					INNER JOIN (
+						SELECT	TOP 100 PERCENT
+								T.*
+						FROM	@TillArticle T
+						WHERE	(
+							T.ItemName IS NOT NULL
+						)
+					) B
+					ON
+						A.ItemCode = B.ItemCode
+		) T</value>
+  </data>
+</root>

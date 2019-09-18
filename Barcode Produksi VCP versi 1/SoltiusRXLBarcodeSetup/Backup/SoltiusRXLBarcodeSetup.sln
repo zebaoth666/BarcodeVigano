@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SoltiusRXLBarcodeSetup", "SoltiusRXLBarcodeSetup.vdproj", "{26093DC5-FA3B-47AA-84A6-7A3FDBBA0B1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soltius Rxl Barcode", "..\Soltius Rxl Barcode\Soltius Rxl Barcode.csproj", "{1C339E1B-C89D-478F-B552-5B3A868A0F60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soltius.RetailExcel.Data", "..\Soltius.RetailExcel.Data\Soltius.RetailExcel.Data.csproj", "{DA8A5F55-6478-4B0C-96C3-FF9307578D21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoltiusRxlHelperLib", "..\SoltiusRxlHelperLib\SoltiusRxlHelperLib.csproj", "{3FB383CE-2A94-4BF3-80D6-913D90DF5999}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MilanoBarcode(ForShoes)", "..\MilanoBarcode(ForShoes)\MilanoBarcode(ForShoes).vdproj", "{29533B10-79FD-426A-B5C4-1D4E54DE43AC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26093DC5-FA3B-47AA-84A6-7A3FDBBA0B1C}.Debug|Any CPU.ActiveCfg = Debug
+		{26093DC5-FA3B-47AA-84A6-7A3FDBBA0B1C}.Debug|Any CPU.Build.0 = Debug
+		{26093DC5-FA3B-47AA-84A6-7A3FDBBA0B1C}.Release|Any CPU.ActiveCfg = Release
+		{26093DC5-FA3B-47AA-84A6-7A3FDBBA0B1C}.Release|Any CPU.Build.0 = Release
+		{1C339E1B-C89D-478F-B552-5B3A868A0F60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C339E1B-C89D-478F-B552-5B3A868A0F60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C339E1B-C89D-478F-B552-5B3A868A0F60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C339E1B-C89D-478F-B552-5B3A868A0F60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA8A5F55-6478-4B0C-96C3-FF9307578D21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA8A5F55-6478-4B0C-96C3-FF9307578D21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA8A5F55-6478-4B0C-96C3-FF9307578D21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA8A5F55-6478-4B0C-96C3-FF9307578D21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FB383CE-2A94-4BF3-80D6-913D90DF5999}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FB383CE-2A94-4BF3-80D6-913D90DF5999}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FB383CE-2A94-4BF3-80D6-913D90DF5999}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FB383CE-2A94-4BF3-80D6-913D90DF5999}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29533B10-79FD-426A-B5C4-1D4E54DE43AC}.Debug|Any CPU.ActiveCfg = Debug
+		{29533B10-79FD-426A-B5C4-1D4E54DE43AC}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

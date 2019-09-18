@@ -1,0 +1,549 @@
+<?xml version="1.0" standalone="yes"?>
+<RxlBarcodeConfiguration xmlns="http://www.soltius.co.id/RxlBlaster2008/RxlBarcodeConfiguration.xsd">
+  <xs:schema id="RxlBarcodeConfiguration" targetNamespace="http://www.soltius.co.id/RxlBlaster2008/RxlBarcodeConfiguration.xsd" xmlns:mstns="http://www.soltius.co.id/RxlBlaster2008/RxlBarcodeConfiguration.xsd" xmlns="http://www.soltius.co.id/RxlBlaster2008/RxlBarcodeConfiguration.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="RxlBarcodeConfiguration" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="PrintLabel">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="LabelID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" type="xs:int" />
+                <xs:element name="LabelDescription" type="xs:string" default="" />
+                <xs:element name="LabelWidth" type="xs:decimal" default="0" />
+                <xs:element name="LabelHeight" type="xs:decimal" default="0" />
+                <xs:element name="LabelColumnSpace" type="xs:decimal" default="0" />
+                <xs:element name="LabelRowSpace" type="xs:decimal" default="0" />
+                <xs:element name="LabelTopMargin" type="xs:decimal" default="0" />
+                <xs:element name="LabelBottomMargin" type="xs:decimal" default="0" />
+                <xs:element name="LabelLeftMargin" type="xs:decimal" default="5" />
+                <xs:element name="LabelRightMargin" type="xs:decimal" default="5" />
+                <xs:element name="PageTopMargin" type="xs:decimal" default="0" />
+                <xs:element name="PageBottomMargin" type="xs:decimal" default="0" />
+                <xs:element name="PageLeftMargin" type="xs:decimal" default="0" />
+                <xs:element name="PageRightMargin" type="xs:decimal" default="0" />
+                <xs:element name="PageOrientation" type="xs:string" default="False" />
+                <xs:element name="PaperWidth" type="xs:decimal" default="0" />
+                <xs:element name="PaperHeight" type="xs:decimal" default="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="PrintSetting">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="SettingCode" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" type="xs:string" default="Default" />
+                <xs:element name="PrinterName" type="xs:string" default="DefaultPrinter" minOccurs="0" />
+                <xs:element name="PrintStartRow" type="xs:int" default="1" />
+                <xs:element name="PrintStartColumn" type="xs:int" default="1" />
+                <xs:element name="BarcodeType" type="xs:string" default="Code39" />
+                <xs:element name="ShowTopText" type="xs:boolean" default="true" />
+                <xs:element name="TopTextFontStyle" type="xs:string" default="Courier New, 8.25pt" />
+                <xs:element name="TopTextType" type="xs:string" default="ItemName" />
+                <xs:element name="ShowBottomText" type="xs:boolean" default="true" />
+                <xs:element name="BottomTextFontStyle" type="xs:string" default="Courier New, 8.25pt" />
+                <xs:element name="BottomTextType" type="xs:string" default="ItemCode" />
+                <xs:element name="BarcodeWidthScale" type="xs:decimal" default="100" />
+                <xs:element name="BarcodeHeightScale" type="xs:decimal" default="100" />
+                <xs:element name="LabelID" type="xs:int" default="1" />
+                <xs:element name="ShowPrcPrnText" type="xs:boolean" default="true" />
+                <xs:element name="PrcPrnTextFontStyle" type="xs:string" default="Courier New, 8.25pt" />
+                <xs:element name="PrcPrnTextType" type="xs:string" default="SellPrice" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="PK_PrintLabel" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//mstns:PrintLabel" />
+        <xs:field xpath="mstns:LabelID" />
+      </xs:unique>
+      <xs:unique name="Constraint1">
+        <xs:selector xpath=".//mstns:PrintLabel" />
+        <xs:field xpath="mstns:LabelDescription" />
+      </xs:unique>
+      <xs:unique name="PK_PrintSetting" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//mstns:PrintSetting" />
+        <xs:field xpath="mstns:SettingCode" />
+      </xs:unique>
+    </xs:element>
+    <xs:annotation>
+      <xs:appinfo>
+        <msdata:Relationship name="FK_PrintSetting_PrintLabel" msdata:parent="PrintLabel" msdata:child="PrintSetting" msdata:parentkey="LabelID" msdata:childkey="LabelID" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:schema>
+  <PrintLabel>
+    <LabelID>1</LabelID>
+    <LabelDescription>Shoes Barcode Printer</LabelDescription>
+    <LabelWidth>2.60</LabelWidth>
+    <LabelHeight>1.20</LabelHeight>
+    <LabelColumnSpace>0.0</LabelColumnSpace>
+    <LabelRowSpace>0.0</LabelRowSpace>
+    <LabelTopMargin>1.0</LabelTopMargin>
+    <LabelBottomMargin>0.50</LabelBottomMargin>
+    <LabelLeftMargin>1.0</LabelLeftMargin>
+    <LabelRightMargin>0.50</LabelRightMargin>
+    <PageTopMargin>0.0</PageTopMargin>
+    <PageBottomMargin>0.0</PageBottomMargin>
+    <PageLeftMargin>0.0</PageLeftMargin>
+    <PageRightMargin>0.0</PageRightMargin>
+    <PageOrientation>Portrait</PageOrientation>
+    <PaperWidth>2.87</PaperWidth>
+    <PaperHeight>1.31</PaperHeight>
+  </PrintLabel>
+  <PrintLabel>
+    <LabelID>2</LabelID>
+    <LabelDescription>Shoes Laser Printer</LabelDescription>
+    <LabelWidth>2.60</LabelWidth>
+    <LabelHeight>1.20</LabelHeight>
+    <LabelColumnSpace>0.27</LabelColumnSpace>
+    <LabelRowSpace>0.11</LabelRowSpace>
+    <LabelTopMargin>1.0</LabelTopMargin>
+    <LabelBottomMargin>0.50</LabelBottomMargin>
+    <LabelLeftMargin>1.0</LabelLeftMargin>
+    <LabelRightMargin>0.50</LabelRightMargin>
+    <PageTopMargin>0.0</PageTopMargin>
+    <PageBottomMargin>0.0</PageBottomMargin>
+    <PageLeftMargin>0.0</PageLeftMargin>
+    <PageRightMargin>0.0</PageRightMargin>
+    <PageOrientation>Portrait</PageOrientation>
+    <PaperWidth>8.61</PaperWidth>
+    <PaperHeight>11.70</PaperHeight>
+  </PrintLabel>
+  <PrintLabel>
+    <LabelID>3</LabelID>
+    <LabelDescription>Tom &amp; Jerry No. 100</LabelDescription>
+    <LabelWidth>3.78</LabelWidth>
+    <LabelHeight>1.34</LabelHeight>
+    <LabelColumnSpace>0.32</LabelColumnSpace>
+    <LabelRowSpace>0.24</LabelRowSpace>
+    <LabelTopMargin>0.0</LabelTopMargin>
+    <LabelBottomMargin>0.0</LabelBottomMargin>
+    <LabelLeftMargin>5.0</LabelLeftMargin>
+    <LabelRightMargin>10.0</LabelRightMargin>
+    <PageTopMargin>0.32</PageTopMargin>
+    <PageBottomMargin>0.00</PageBottomMargin>
+    <PageLeftMargin>0.20</PageLeftMargin>
+    <PageRightMargin>0.20</PageRightMargin>
+    <PageOrientation>Landscape</PageOrientation>
+    <PaperWidth>8.47</PaperWidth>
+    <PaperHeight>6.5</PaperHeight>
+  </PrintLabel>
+  <PrintLabel>
+    <LabelID>4</LabelID>
+    <LabelDescription>Tom &amp; Jerry No. 101</LabelDescription>
+    <LabelWidth>3.78</LabelWidth>
+    <LabelHeight>1.77</LabelHeight>
+    <LabelColumnSpace>0.32</LabelColumnSpace>
+    <LabelRowSpace>0.32</LabelRowSpace>
+    <LabelTopMargin>0.0</LabelTopMargin>
+    <LabelBottomMargin>0.0</LabelBottomMargin>
+    <LabelLeftMargin>5.0</LabelLeftMargin>
+    <LabelRightMargin>10.0</LabelRightMargin>
+    <PageTopMargin>0.39</PageTopMargin>
+    <PageBottomMargin>0.00</PageBottomMargin>
+    <PageLeftMargin>0.16</PageLeftMargin>
+    <PageRightMargin>0.16</PageRightMargin>
+    <PageOrientation>Landscape</PageOrientation>
+    <PaperWidth>8.47</PaperWidth>
+    <PaperHeight>6.5</PaperHeight>
+  </PrintLabel>
+  <PrintLabel>
+    <LabelID>5</LabelID>
+    <LabelDescription>Tom &amp; Jerry No. 103</LabelDescription>
+    <LabelWidth>2.56</LabelWidth>
+    <LabelHeight>1.06</LabelHeight>
+    <LabelColumnSpace>0.16</LabelColumnSpace>
+    <LabelRowSpace>0.43</LabelRowSpace>
+    <LabelTopMargin>0.0</LabelTopMargin>
+    <LabelBottomMargin>0.0</LabelBottomMargin>
+    <LabelLeftMargin>5.0</LabelLeftMargin>
+    <LabelRightMargin>10.0</LabelRightMargin>
+    <PageTopMargin>0.51</PageTopMargin>
+    <PageBottomMargin>0.00</PageBottomMargin>
+    <PageLeftMargin>0.08</PageLeftMargin>
+    <PageRightMargin>0.08</PageRightMargin>
+    <PageOrientation>Landscape</PageOrientation>
+    <PaperWidth>8.47</PaperWidth>
+    <PaperHeight>6.5</PaperHeight>
+  </PrintLabel>
+  <PrintLabel>
+    <LabelID>6</LabelID>
+    <LabelDescription>Tom &amp; Jerry No. 104</LabelDescription>
+    <LabelWidth>3.03</LabelWidth>
+    <LabelHeight>1.02</LabelHeight>
+    <LabelColumnSpace>0.00</LabelColumnSpace>
+    <LabelRowSpace>0.00</LabelRowSpace>
+    <LabelTopMargin>0.0</LabelTopMargin>
+    <LabelBottomMargin>0.0</LabelBottomMargin>
+    <LabelLeftMargin>5.0</LabelLeftMargin>
+    <LabelRightMargin>10.0</LabelRightMargin>
+    <PageTopMargin>0.8</PageTopMargin>
+    <PageBottomMargin>0.00</PageBottomMargin>
+    <PageLeftMargin>0.28</PageLeftMargin>
+    <PageRightMargin>0.28</PageRightMargin>
+    <PageOrientation>Portrait</PageOrientation>
+    <PaperWidth>6.5</PaperWidth>
+    <PaperHeight>8.47</PaperHeight>
+  </PrintLabel>
+  <PrintLabel>
+    <LabelID>7</LabelID>
+    <LabelDescription>Tom &amp; Jerry No. 105</LabelDescription>
+    <LabelWidth>1.46</LabelWidth>
+    <LabelHeight>1.02</LabelHeight>
+    <LabelColumnSpace>0.16</LabelColumnSpace>
+    <LabelRowSpace>0.00</LabelRowSpace>
+    <LabelTopMargin>0.16</LabelTopMargin>
+    <LabelBottomMargin>0.0</LabelBottomMargin>
+    <LabelLeftMargin>0.0</LabelLeftMargin>
+    <LabelRightMargin>5.0</LabelRightMargin>
+    <PageTopMargin>10.0</PageTopMargin>
+    <PageBottomMargin>0.00</PageBottomMargin>
+    <PageLeftMargin>0.14</PageLeftMargin>
+    <PageRightMargin>0.14</PageRightMargin>
+    <PageOrientation>Portrait</PageOrientation>
+    <PaperWidth>8.47</PaperWidth>
+    <PaperHeight>6.5</PaperHeight>
+  </PrintLabel>
+  <PrintLabel>
+    <LabelID>8</LabelID>
+    <LabelDescription>Tom &amp; Jerry No. 106</LabelDescription>
+    <LabelWidth>0.98</LabelWidth>
+    <LabelHeight>1.06</LabelHeight>
+    <LabelColumnSpace>0.16</LabelColumnSpace>
+    <LabelRowSpace>0.00</LabelRowSpace>
+    <LabelTopMargin>0.0</LabelTopMargin>
+    <LabelBottomMargin>0.0</LabelBottomMargin>
+    <LabelLeftMargin>5.0</LabelLeftMargin>
+    <LabelRightMargin>10.0</LabelRightMargin>
+    <PageTopMargin>0.16</PageTopMargin>
+    <PageBottomMargin>0.00</PageBottomMargin>
+    <PageLeftMargin>0.12</PageLeftMargin>
+    <PageRightMargin>0.12</PageRightMargin>
+    <PageOrientation>Portrait</PageOrientation>
+    <PaperWidth>8.47</PaperWidth>
+    <PaperHeight>6.89</PaperHeight>
+  </PrintLabel>
+  <PrintLabel>
+    <LabelID>9</LabelID>
+    <LabelDescription>Tom &amp; Jerry No. 107</LabelDescription>
+    <LabelWidth>1.97</LabelWidth>
+    <LabelHeight>0.81</LabelHeight>
+    <LabelColumnSpace>0.12</LabelColumnSpace>
+    <LabelRowSpace>0.00</LabelRowSpace>
+    <LabelTopMargin>0.0</LabelTopMargin>
+    <LabelBottomMargin>0.0</LabelBottomMargin>
+    <LabelLeftMargin>5.0</LabelLeftMargin>
+    <LabelRightMargin>10.0</LabelRightMargin>
+    <PageTopMargin>0.04</PageTopMargin>
+    <PageBottomMargin>0.00</PageBottomMargin>
+    <PageLeftMargin>0.24</PageLeftMargin>
+    <PageRightMargin>0.24</PageRightMargin>
+    <PageOrientation>Portrait</PageOrientation>
+    <PaperWidth>6.5</PaperWidth>
+    <PaperHeight>8.47</PaperHeight>
+  </PrintLabel>
+  <PrintLabel>
+    <LabelID>10</LabelID>
+    <LabelDescription>Tom &amp; Jerry No. 108</LabelDescription>
+    <LabelWidth>1.46</LabelWidth>
+    <LabelHeight>0.79</LabelHeight>
+    <LabelColumnSpace>0.16</LabelColumnSpace>
+    <LabelRowSpace>0.00</LabelRowSpace>
+    <LabelTopMargin>0.0</LabelTopMargin>
+    <LabelBottomMargin>0.0</LabelBottomMargin>
+    <LabelLeftMargin>5.0</LabelLeftMargin>
+    <LabelRightMargin>10.0</LabelRightMargin>
+    <PageTopMargin>0.18</PageTopMargin>
+    <PageBottomMargin>0.00</PageBottomMargin>
+    <PageLeftMargin>0.12</PageLeftMargin>
+    <PageRightMargin>0.06</PageRightMargin>
+    <PageOrientation>Portrait</PageOrientation>
+    <PaperWidth>8.47</PaperWidth>
+    <PaperHeight>6.5</PaperHeight>
+  </PrintLabel>
+  <PrintLabel>
+    <LabelID>11</LabelID>
+    <LabelDescription>Tom &amp; Jerry No. 110</LabelDescription>
+    <LabelWidth>0.91</LabelWidth>
+    <LabelHeight>0.59</LabelHeight>
+    <LabelColumnSpace>0.00</LabelColumnSpace>
+    <LabelRowSpace>0.12</LabelRowSpace>
+    <LabelTopMargin>0.0</LabelTopMargin>
+    <LabelBottomMargin>0.0</LabelBottomMargin>
+    <LabelLeftMargin>5.0</LabelLeftMargin>
+    <LabelRightMargin>10.0</LabelRightMargin>
+    <PageTopMargin>0.16</PageTopMargin>
+    <PageBottomMargin>0.00</PageBottomMargin>
+    <PageLeftMargin>0.32</PageLeftMargin>
+    <PageRightMargin>0.08</PageRightMargin>
+    <PageOrientation>Portrait</PageOrientation>
+    <PaperWidth>8.86</PaperWidth>
+    <PaperHeight>6.89</PaperHeight>
+  </PrintLabel>
+  <PrintLabel>
+    <LabelID>12</LabelID>
+    <LabelDescription>Tom &amp; Jerry No. 112</LabelDescription>
+    <LabelWidth>0.87</LabelWidth>
+    <LabelHeight>0.40</LabelHeight>
+    <LabelColumnSpace>0.00</LabelColumnSpace>
+    <LabelRowSpace>0.00</LabelRowSpace>
+    <LabelTopMargin>0.0</LabelTopMargin>
+    <LabelBottomMargin>0.0</LabelBottomMargin>
+    <LabelLeftMargin>5.0</LabelLeftMargin>
+    <LabelRightMargin>10.0</LabelRightMargin>
+    <PageTopMargin>0.20</PageTopMargin>
+    <PageBottomMargin>0.00</PageBottomMargin>
+    <PageLeftMargin>0.16</PageLeftMargin>
+    <PageRightMargin>0.08</PageRightMargin>
+    <PageOrientation>Portrait</PageOrientation>
+    <PaperWidth>8.47</PaperWidth>
+    <PaperHeight>6.89</PaperHeight>
+  </PrintLabel>
+  <PrintLabel>
+    <LabelID>13</LabelID>
+    <LabelDescription>Tom &amp; Jerry No. 113</LabelDescription>
+    <LabelWidth>0.55</LabelWidth>
+    <LabelHeight>0.43</LabelHeight>
+    <LabelColumnSpace>0.00</LabelColumnSpace>
+    <LabelRowSpace>0.00</LabelRowSpace>
+    <LabelTopMargin>0.0</LabelTopMargin>
+    <LabelBottomMargin>0.0</LabelBottomMargin>
+    <LabelLeftMargin>5.0</LabelLeftMargin>
+    <LabelRightMargin>10.0</LabelRightMargin>
+    <PageTopMargin>0.24</PageTopMargin>
+    <PageBottomMargin>0.00</PageBottomMargin>
+    <PageLeftMargin>0.16</PageLeftMargin>
+    <PageRightMargin>0.08</PageRightMargin>
+    <PageOrientation>Portrait</PageOrientation>
+    <PaperWidth>8.5</PaperWidth>
+    <PaperHeight>6.65</PaperHeight>
+  </PrintLabel>
+  <PrintLabel>
+    <LabelID>14</LabelID>
+    <LabelDescription>Tom &amp; Jerry No. 120</LabelDescription>
+    <LabelWidth>4.65</LabelWidth>
+    <LabelHeight>3.07</LabelHeight>
+    <LabelColumnSpace>0.00</LabelColumnSpace>
+    <LabelRowSpace>0.94</LabelRowSpace>
+    <LabelTopMargin>0.0</LabelTopMargin>
+    <LabelBottomMargin>0.0</LabelBottomMargin>
+    <LabelLeftMargin>5.0</LabelLeftMargin>
+    <LabelRightMargin>10.0</LabelRightMargin>
+    <PageTopMargin>0.51</PageTopMargin>
+    <PageBottomMargin>0.00</PageBottomMargin>
+    <PageLeftMargin>0.98</PageLeftMargin>
+    <PageRightMargin>0.98</PageRightMargin>
+    <PageOrientation>Portrait</PageOrientation>
+    <PaperWidth>6.5</PaperWidth>
+    <PaperHeight>8.47</PaperHeight>
+  </PrintLabel>
+  <PrintLabel>
+    <LabelID>15</LabelID>
+    <LabelDescription>Tom &amp; Jerry No. 121</LabelDescription>
+    <LabelWidth>2.93</LabelWidth>
+    <LabelHeight>1.32</LabelHeight>
+    <LabelColumnSpace>0.16</LabelColumnSpace>
+    <LabelRowSpace>0.28</LabelRowSpace>
+    <LabelTopMargin>0.0</LabelTopMargin>
+    <LabelBottomMargin>0.0</LabelBottomMargin>
+    <LabelLeftMargin>5.0</LabelLeftMargin>
+    <LabelRightMargin>10.0</LabelRightMargin>
+    <PageTopMargin>0.28</PageTopMargin>
+    <PageBottomMargin>0.50</PageBottomMargin>
+    <PageLeftMargin>0.30</PageLeftMargin>
+    <PageRightMargin>0.20</PageRightMargin>
+    <PageOrientation>Portrait</PageOrientation>
+    <PaperWidth>6.92</PaperWidth>
+    <PaperHeight>8.77</PaperHeight>
+  </PrintLabel>
+  <PrintLabel>
+    <LabelID>16</LabelID>
+    <LabelDescription>Tom &amp; Jerry No. 122</LabelDescription>
+    <LabelWidth>3.33</LabelWidth>
+    <LabelHeight>0.67</LabelHeight>
+    <LabelColumnSpace>0.65</LabelColumnSpace>
+    <LabelRowSpace>0.12</LabelRowSpace>
+    <LabelTopMargin>0.0</LabelTopMargin>
+    <LabelBottomMargin>0.0</LabelBottomMargin>
+    <LabelLeftMargin>5.0</LabelLeftMargin>
+    <LabelRightMargin>10.0</LabelRightMargin>
+    <PageTopMargin>0.20</PageTopMargin>
+    <PageBottomMargin>0.00</PageBottomMargin>
+    <PageLeftMargin>0.43</PageLeftMargin>
+    <PageRightMargin>0.32</PageRightMargin>
+    <PageOrientation>Portrait</PageOrientation>
+    <PaperWidth>8.47</PaperWidth>
+    <PaperHeight>6.5</PaperHeight>
+  </PrintLabel>
+  <PrintLabel>
+    <LabelID>17</LabelID>
+    <LabelDescription>Tom &amp; Jerry No. 123</LabelDescription>
+    <LabelWidth>1.18</LabelWidth>
+    <LabelHeight>0.51</LabelHeight>
+    <LabelColumnSpace>0.12</LabelColumnSpace>
+    <LabelRowSpace>0.00</LabelRowSpace>
+    <LabelTopMargin>0.0</LabelTopMargin>
+    <LabelBottomMargin>0.0</LabelBottomMargin>
+    <LabelLeftMargin>5.0</LabelLeftMargin>
+    <LabelRightMargin>10.0</LabelRightMargin>
+    <PageTopMargin>0.22</PageTopMargin>
+    <PageBottomMargin>0.00</PageBottomMargin>
+    <PageLeftMargin>0.20</PageLeftMargin>
+    <PageRightMargin>0.16</PageRightMargin>
+    <PageOrientation>Portrait</PageOrientation>
+    <PaperWidth>8.27</PaperWidth>
+    <PaperHeight>6.5</PaperHeight>
+  </PrintLabel>
+  <PrintLabel>
+    <LabelID>18</LabelID>
+    <LabelDescription>Tom &amp; Jerry No. 127</LabelDescription>
+    <LabelWidth>2.60</LabelWidth>
+    <LabelHeight>1.22</LabelHeight>
+    <LabelColumnSpace>0.47</LabelColumnSpace>
+    <LabelRowSpace>0.35</LabelRowSpace>
+    <LabelTopMargin>0.0</LabelTopMargin>
+    <LabelBottomMargin>0.0</LabelBottomMargin>
+    <LabelLeftMargin>5.0</LabelLeftMargin>
+    <LabelRightMargin>10.0</LabelRightMargin>
+    <PageTopMargin>0.35</PageTopMargin>
+    <PageBottomMargin>0.00</PageBottomMargin>
+    <PageLeftMargin>0.35</PageLeftMargin>
+    <PageRightMargin>0.28</PageRightMargin>
+    <PageOrientation>Portrait</PageOrientation>
+    <PaperWidth>6.5</PaperWidth>
+    <PaperHeight>8.47</PaperHeight>
+  </PrintLabel>
+  <PrintLabel>
+    <LabelID>19</LabelID>
+    <LabelDescription>Tom &amp; Jerry No. 129</LabelDescription>
+    <LabelWidth>2.28</LabelWidth>
+    <LabelHeight>0.75</LabelHeight>
+    <LabelColumnSpace>0.39</LabelColumnSpace>
+    <LabelRowSpace>0.00</LabelRowSpace>
+    <LabelTopMargin>0.0</LabelTopMargin>
+    <LabelBottomMargin>0.0</LabelBottomMargin>
+    <LabelLeftMargin>5.0</LabelLeftMargin>
+    <LabelRightMargin>10.0</LabelRightMargin>
+    <PageTopMargin>0.30</PageTopMargin>
+    <PageBottomMargin>0.00</PageBottomMargin>
+    <PageLeftMargin>0.20</PageLeftMargin>
+    <PageRightMargin>0.20</PageRightMargin>
+    <PageOrientation>Portrait</PageOrientation>
+    <PaperWidth>8.47</PaperWidth>
+    <PaperHeight>6.5</PaperHeight>
+  </PrintLabel>
+  <PrintLabel>
+    <LabelID>20</LabelID>
+    <LabelDescription>Tom &amp; Jerry No. L.02</LabelDescription>
+    <LabelWidth>2.76</LabelWidth>
+    <LabelHeight>1.42</LabelHeight>
+    <LabelColumnSpace>0.00</LabelColumnSpace>
+    <LabelRowSpace>0.00</LabelRowSpace>
+    <LabelTopMargin>0.0</LabelTopMargin>
+    <LabelBottomMargin>0.0</LabelBottomMargin>
+    <LabelLeftMargin>5.0</LabelLeftMargin>
+    <LabelRightMargin>10.0</LabelRightMargin>
+    <PageTopMargin>0.16</PageTopMargin>
+    <PageBottomMargin>0.00</PageBottomMargin>
+    <PageLeftMargin>0.00</PageLeftMargin>
+    <PageRightMargin>0.00</PageRightMargin>
+    <PageOrientation>Portrait</PageOrientation>
+    <PaperWidth>8.27</PaperWidth>
+    <PaperHeight>11.69</PaperHeight>
+  </PrintLabel>
+  <PrintLabel>
+    <LabelID>21</LabelID>
+    <LabelDescription>Tom &amp; Jerry No. L.03</LabelDescription>
+    <LabelWidth>2.76</LabelWidth>
+    <LabelHeight>1.17</LabelHeight>
+    <LabelColumnSpace>0.00</LabelColumnSpace>
+    <LabelRowSpace>0.00</LabelRowSpace>
+    <LabelTopMargin>0.0</LabelTopMargin>
+    <LabelBottomMargin>0.0</LabelBottomMargin>
+    <LabelLeftMargin>5.0</LabelLeftMargin>
+    <LabelRightMargin>10.0</LabelRightMargin>
+    <PageTopMargin>0.00</PageTopMargin>
+    <PageBottomMargin>0.00</PageBottomMargin>
+    <PageLeftMargin>0.00</PageLeftMargin>
+    <PageRightMargin>0.00</PageRightMargin>
+    <PageOrientation>Portrait</PageOrientation>
+    <PaperWidth>8.27</PaperWidth>
+    <PaperHeight>11.69</PaperHeight>
+  </PrintLabel>
+  <PrintLabel>
+    <LabelID>22</LabelID>
+    <LabelDescription>Tom &amp; Jerry No. L.04</LabelDescription>
+    <LabelWidth>3.90</LabelWidth>
+    <LabelHeight>1.50</LabelHeight>
+    <LabelColumnSpace>0.16</LabelColumnSpace>
+    <LabelRowSpace>0.00</LabelRowSpace>
+    <LabelTopMargin>0.0</LabelTopMargin>
+    <LabelBottomMargin>0.0</LabelBottomMargin>
+    <LabelLeftMargin>5.0</LabelLeftMargin>
+    <LabelRightMargin>10.0</LabelRightMargin>
+    <PageTopMargin>0.63</PageTopMargin>
+    <PageBottomMargin>0.00</PageBottomMargin>
+    <PageLeftMargin>0.16</PageLeftMargin>
+    <PageRightMargin>0.16</PageRightMargin>
+    <PageOrientation>Portrait</PageOrientation>
+    <PaperWidth>8.27</PaperWidth>
+    <PaperHeight>11.69</PaperHeight>
+  </PrintLabel>
+  <PrintLabel>
+    <LabelID>23</LabelID>
+    <LabelDescription>Tom &amp; Jerry No. L.05</LabelDescription>
+    <LabelWidth>4.13</LabelWidth>
+    <LabelHeight>1.46</LabelHeight>
+    <LabelColumnSpace>0.00</LabelColumnSpace>
+    <LabelRowSpace>0.00</LabelRowSpace>
+    <LabelTopMargin>0.0</LabelTopMargin>
+    <LabelBottomMargin>0.0</LabelBottomMargin>
+    <LabelLeftMargin>5.0</LabelLeftMargin>
+    <LabelRightMargin>10.0</LabelRightMargin>
+    <PageTopMargin>0.00</PageTopMargin>
+    <PageBottomMargin>0.00</PageBottomMargin>
+    <PageLeftMargin>0.00</PageLeftMargin>
+    <PageRightMargin>0.00</PageRightMargin>
+    <PageOrientation>Portrait</PageOrientation>
+    <PaperWidth>8.27</PaperWidth>
+    <PaperHeight>11.69</PaperHeight>
+  </PrintLabel>
+  <PrintLabel>
+    <LabelID>24</LabelID>
+    <LabelDescription>Tom &amp; Jerry No. 99</LabelDescription>
+    <LabelWidth>1.37</LabelWidth>
+    <LabelHeight>0.28</LabelHeight>
+    <LabelColumnSpace>0.25</LabelColumnSpace>
+    <LabelRowSpace>0.00</LabelRowSpace>
+    <LabelTopMargin>0.0</LabelTopMargin>
+    <LabelBottomMargin>0.0</LabelBottomMargin>
+    <LabelLeftMargin>5.0</LabelLeftMargin>
+    <LabelRightMargin>10.0</LabelRightMargin>
+    <PageTopMargin>0.16</PageTopMargin>
+    <PageBottomMargin>0.00</PageBottomMargin>
+    <PageLeftMargin>0.24</PageLeftMargin>
+    <PageRightMargin>0.16</PageRightMargin>
+    <PageOrientation>Portrait</PageOrientation>
+    <PaperWidth>6.5</PaperWidth>
+    <PaperHeight>8.47</PaperHeight>
+  </PrintLabel>
+  <PrintSetting>
+    <SettingCode>Default</SettingCode>
+    <PrinterName>Send To OneNote 2007</PrinterName>
+    <PrintStartRow>1</PrintStartRow>
+    <PrintStartColumn>1</PrintStartColumn>
+    <BarcodeType>Code39</BarcodeType>
+    <ShowTopText>true</ShowTopText>
+    <TopTextFontStyle>Arial, 8.25pt</TopTextFontStyle>
+    <TopTextType>ItemName</TopTextType>
+    <ShowBottomText>true</ShowBottomText>
+    <BottomTextFontStyle>Arial, 8.25pt</BottomTextFontStyle>
+    <BottomTextType>Barcode</BottomTextType>
+    <BarcodeWidthScale>100</BarcodeWidthScale>
+    <BarcodeHeightScale>100</BarcodeHeightScale>
+    <LabelID>1</LabelID>
+    <ShowPrcPrnText>true</ShowPrcPrnText>
+    <PrcPrnTextFontStyle>Arial, 8.25pt</PrcPrnTextFontStyle>
+    <PrcPrnTextType>SellPrice</PrcPrnTextType>
+  </PrintSetting>
+</RxlBarcodeConfiguration>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RxlBarcodeConfiguration" targetNamespace="http://www.soltius.co.id/RxlBlaster2008/RxlBarcodeConfiguration.xsd" xmlns:mstns="http://www.soltius.co.id/RxlBlaster2008/RxlBarcodeConfiguration.xsd" xmlns="http://www.soltius.co.id/RxlBlaster2008/RxlBarcodeConfiguration.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RxlBarcodeConfiguration" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="RxlBarcodeConfiguration" msprop:Generator_DataSetName="RxlBarcodeConfiguration" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PrintLabel" msprop:Generator_UserTableName="PrintLabel" msprop:Generator_RowDeletedName="PrintLabelRowDeleted" msprop:Generator_RowChangedName="PrintLabelRowChanged" msprop:Generator_RowClassName="PrintLabelRow" msprop:Generator_RowChangingName="PrintLabelRowChanging" msprop:Generator_RowEvArgName="PrintLabelRowChangeEvent" msprop:Generator_RowEvHandlerName="PrintLabelRowChangeEventHandler" msprop:Generator_TableClassName="PrintLabelDataTable" msprop:Generator_TableVarName="tablePrintLabel" msprop:Generator_RowDeletingName="PrintLabelRowDeleting" msprop:Generator_TablePropName="PrintLabel">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LabelID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_UserColumnName="LabelID" msprop:Generator_ColumnPropNameInRow="LabelID" msprop:Generator_ColumnVarNameInTable="columnLabelID" msprop:Generator_ColumnPropNameInTable="LabelIDColumn" type="xs:int" />
+              <xs:element name="LabelDescription" msprop:Generator_UserColumnName="LabelDescription" msprop:Generator_ColumnVarNameInTable="columnLabelDescription" msprop:Generator_ColumnPropNameInRow="LabelDescription" msprop:Generator_ColumnPropNameInTable="LabelDescriptionColumn" type="xs:string" default="" />
+              <xs:element name="LabelWidth" msprop:Generator_UserColumnName="LabelWidth" msprop:Generator_ColumnVarNameInTable="columnLabelWidth" msprop:Generator_ColumnPropNameInRow="LabelWidth" msprop:Generator_ColumnPropNameInTable="LabelWidthColumn" type="xs:decimal" default="0" />
+              <xs:element name="LabelHeight" msprop:Generator_UserColumnName="LabelHeight" msprop:Generator_ColumnVarNameInTable="columnLabelHeight" msprop:Generator_ColumnPropNameInRow="LabelHeight" msprop:Generator_ColumnPropNameInTable="LabelHeightColumn" type="xs:decimal" default="0" />
+              <xs:element name="LabelColumnSpace" msprop:Generator_UserColumnName="LabelColumnSpace" msprop:Generator_ColumnVarNameInTable="columnLabelColumnSpace" msprop:Generator_ColumnPropNameInRow="LabelColumnSpace" msprop:Generator_ColumnPropNameInTable="LabelColumnSpaceColumn" type="xs:decimal" default="0" />
+              <xs:element name="LabelRowSpace" msprop:Generator_UserColumnName="LabelRowSpace" msprop:Generator_ColumnVarNameInTable="columnLabelRowSpace" msprop:Generator_ColumnPropNameInRow="LabelRowSpace" msprop:Generator_ColumnPropNameInTable="LabelRowSpaceColumn" type="xs:decimal" default="0" />
+              <xs:element name="LabelTopMargin" msprop:Generator_UserColumnName="LabelTopMargin" msprop:Generator_ColumnPropNameInRow="LabelTopMargin" msprop:Generator_ColumnVarNameInTable="columnLabelTopMargin" msprop:Generator_ColumnPropNameInTable="LabelTopMarginColumn" type="xs:decimal" default="0" />
+              <xs:element name="LabelBottomMargin" msprop:Generator_UserColumnName="LabelBottomMargin" msprop:Generator_ColumnPropNameInRow="LabelBottomMargin" msprop:Generator_ColumnVarNameInTable="columnLabelBottomMargin" msprop:Generator_ColumnPropNameInTable="LabelBottomMarginColumn" type="xs:decimal" default="0" />
+              <xs:element name="LabelLeftMargin" msprop:Generator_UserColumnName="LabelLeftMargin" msprop:Generator_ColumnPropNameInRow="LabelLeftMargin" msprop:Generator_ColumnVarNameInTable="columnLabelLeftMargin" msprop:Generator_ColumnPropNameInTable="LabelLeftMarginColumn" type="xs:decimal" default="5" />
+              <xs:element name="LabelRightMargin" msprop:Generator_UserColumnName="LabelRightMargin" msprop:Generator_ColumnPropNameInRow="LabelRightMargin" msprop:Generator_ColumnVarNameInTable="columnLabelRightMargin" msprop:Generator_ColumnPropNameInTable="LabelRightMarginColumn" type="xs:decimal" default="5" />
+              <xs:element name="PageTopMargin" msprop:Generator_UserColumnName="PageTopMargin" msprop:Generator_ColumnVarNameInTable="columnPageTopMargin" msprop:Generator_ColumnPropNameInRow="PageTopMargin" msprop:Generator_ColumnPropNameInTable="PageTopMarginColumn" type="xs:decimal" default="0" />
+              <xs:element name="PageBottomMargin" msprop:Generator_UserColumnName="PageBottomMargin" msprop:Generator_ColumnVarNameInTable="columnPageBottomMargin" msprop:Generator_ColumnPropNameInRow="PageBottomMargin" msprop:Generator_ColumnPropNameInTable="PageBottomMarginColumn" type="xs:decimal" default="0" />
+              <xs:element name="PageLeftMargin" msprop:Generator_UserColumnName="PageLeftMargin" msprop:Generator_ColumnVarNameInTable="columnPageLeftMargin" msprop:Generator_ColumnPropNameInRow="PageLeftMargin" msprop:Generator_ColumnPropNameInTable="PageLeftMarginColumn" type="xs:decimal" default="0" />
+              <xs:element name="PageRightMargin" msprop:Generator_UserColumnName="PageRightMargin" msprop:Generator_ColumnVarNameInTable="columnPageRightMargin" msprop:Generator_ColumnPropNameInRow="PageRightMargin" msprop:Generator_ColumnPropNameInTable="PageRightMarginColumn" type="xs:decimal" default="0" />
+              <xs:element name="PageOrientation" msprop:Generator_UserColumnName="PageOrientation" msprop:Generator_ColumnVarNameInTable="columnPageOrientation" msprop:Generator_ColumnPropNameInRow="PageOrientation" msprop:Generator_ColumnPropNameInTable="PageOrientationColumn" type="xs:string" default="False" />
+              <xs:element name="PaperWidth" msprop:Generator_UserColumnName="PaperWidth" msprop:Generator_ColumnVarNameInTable="columnPaperWidth" msprop:Generator_ColumnPropNameInRow="PaperWidth" msprop:Generator_ColumnPropNameInTable="PaperWidthColumn" type="xs:decimal" default="0" />
+              <xs:element name="PaperHeight" msprop:Generator_UserColumnName="PaperHeight" msprop:Generator_ColumnVarNameInTable="columnPaperHeight" msprop:Generator_ColumnPropNameInRow="PaperHeight" msprop:Generator_ColumnPropNameInTable="PaperHeightColumn" type="xs:decimal" default="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PrintSetting" msprop:Generator_UserTableName="PrintSetting" msprop:Generator_RowDeletedName="PrintSettingRowDeleted" msprop:Generator_RowChangedName="PrintSettingRowChanged" msprop:Generator_RowClassName="PrintSettingRow" msprop:Generator_RowChangingName="PrintSettingRowChanging" msprop:Generator_RowEvArgName="PrintSettingRowChangeEvent" msprop:Generator_RowEvHandlerName="PrintSettingRowChangeEventHandler" msprop:Generator_TableClassName="PrintSettingDataTable" msprop:Generator_TableVarName="tablePrintSetting" msprop:Generator_RowDeletingName="PrintSettingRowDeleting" msprop:Generator_TablePropName="PrintSetting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SettingCode" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="SettingCode" msprop:Generator_ColumnVarNameInTable="columnSettingCode" msprop:Generator_ColumnPropNameInRow="SettingCode" msprop:Generator_ColumnPropNameInTable="SettingCodeColumn" type="xs:string" default="Default" />
+              <xs:element name="PrinterName" msprop:Generator_UserColumnName="PrinterName" msprop:Generator_ColumnVarNameInTable="columnPrinterName" msprop:Generator_ColumnPropNameInRow="PrinterName" msprop:Generator_ColumnPropNameInTable="PrinterNameColumn" type="xs:string" default="DefaultPrinter" minOccurs="0" />
+              <xs:element name="PrintStartRow" msprop:Generator_UserColumnName="PrintStartRow" msprop:Generator_ColumnVarNameInTable="columnPrintStartRow" msprop:Generator_ColumnPropNameInRow="PrintStartRow" msprop:Generator_ColumnPropNameInTable="PrintStartRowColumn" type="xs:int" default="1" />
+              <xs:element name="PrintStartColumn" msprop:Generator_UserColumnName="PrintStartColumn" msprop:Generator_ColumnVarNameInTable="columnPrintStartColumn" msprop:Generator_ColumnPropNameInRow="PrintStartColumn" msprop:Generator_ColumnPropNameInTable="PrintStartColumnColumn" type="xs:int" default="1" />
+              <xs:element name="BarcodeType" msprop:Generator_UserColumnName="BarcodeType" msprop:Generator_ColumnVarNameInTable="columnBarcodeType" msprop:Generator_ColumnPropNameInRow="BarcodeType" msprop:Generator_ColumnPropNameInTable="BarcodeTypeColumn" type="xs:string" default="Code39" />
+              <xs:element name="ShowTopText" msprop:Generator_UserColumnName="ShowTopText" msprop:Generator_ColumnVarNameInTable="columnShowTopText" msprop:Generator_ColumnPropNameInRow="ShowTopText" msprop:Generator_ColumnPropNameInTable="ShowTopTextColumn" type="xs:boolean" default="true" />
+              <xs:element name="TopTextFontStyle" msprop:Generator_UserColumnName="TopTextFontStyle" msprop:Generator_ColumnVarNameInTable="columnTopTextFontStyle" msprop:Generator_ColumnPropNameInRow="TopTextFontStyle" msprop:Generator_ColumnPropNameInTable="TopTextFontStyleColumn" type="xs:string" default="Courier New, 8.25pt" />
+              <xs:element name="TopTextType" msprop:Generator_UserColumnName="TopTextType" msprop:Generator_ColumnVarNameInTable="columnTopTextType" msprop:Generator_ColumnPropNameInRow="TopTextType" msprop:Generator_ColumnPropNameInTable="TopTextTypeColumn" type="xs:string" default="ItemName" />
+              <xs:element name="ShowBottomText" msprop:Generator_UserColumnName="ShowBottomText" msprop:Generator_ColumnVarNameInTable="columnShowBottomText" msprop:Generator_ColumnPropNameInRow="ShowBottomText" msprop:Generator_ColumnPropNameInTable="ShowBottomTextColumn" type="xs:boolean" default="true" />
+              <xs:element name="BottomTextFontStyle" msprop:Generator_UserColumnName="BottomTextFontStyle" msprop:Generator_ColumnVarNameInTable="columnBottomTextFontStyle" msprop:Generator_ColumnPropNameInRow="BottomTextFontStyle" msprop:Generator_ColumnPropNameInTable="BottomTextFontStyleColumn" type="xs:string" default="Courier New, 8.25pt" />
+              <xs:element name="BottomTextType" msprop:Generator_UserColumnName="BottomTextType" msprop:Generator_ColumnVarNameInTable="columnBottomTextType" msprop:Generator_ColumnPropNameInRow="BottomTextType" msprop:Generator_ColumnPropNameInTable="BottomTextTypeColumn" type="xs:string" default="ItemCode" />
+              <xs:element name="BarcodeWidthScale" msprop:Generator_UserColumnName="BarcodeWidthScale" msprop:Generator_ColumnVarNameInTable="columnBarcodeWidthScale" msprop:Generator_ColumnPropNameInRow="BarcodeWidthScale" msprop:Generator_ColumnPropNameInTable="BarcodeWidthScaleColumn" type="xs:decimal" default="100" />
+              <xs:element name="BarcodeHeightScale" msprop:Generator_UserColumnName="BarcodeHeightScale" msprop:Generator_ColumnVarNameInTable="columnBarcodeHeightScale" msprop:Generator_ColumnPropNameInRow="BarcodeHeightScale" msprop:Generator_ColumnPropNameInTable="BarcodeHeightScaleColumn" type="xs:decimal" default="100" />
+              <xs:element name="LabelID" msprop:Generator_UserColumnName="LabelID" msprop:Generator_ColumnPropNameInRow="LabelID" msprop:Generator_ColumnVarNameInTable="columnLabelID" msprop:Generator_ColumnPropNameInTable="LabelIDColumn" type="xs:int" default="1" />
+              <xs:element name="ShowPrcPrnText" msprop:Generator_UserColumnName="ShowPrcPrnText" msprop:Generator_ColumnPropNameInRow="ShowPrcPrnText" msprop:Generator_ColumnVarNameInTable="columnShowPrcPrnText" msprop:Generator_ColumnPropNameInTable="ShowPrcPrnTextColumn" type="xs:boolean" default="true" />
+              <xs:element name="PrcPrnTextFontStyle" msprop:Generator_UserColumnName="PrcPrnTextFontStyle" msprop:Generator_ColumnPropNameInRow="PrcPrnTextFontStyle" msprop:Generator_ColumnVarNameInTable="columnPrcPrnTextFontStyle" msprop:Generator_ColumnPropNameInTable="PrcPrnTextFontStyleColumn" type="xs:string" default="Courier New, 8.25pt" />
+              <xs:element name="PrcPrnTextType" msprop:Generator_UserColumnName="PrcPrnTextType" msprop:Generator_ColumnPropNameInRow="PrcPrnTextType" msprop:Generator_ColumnVarNameInTable="columnPrcPrnTextType" msprop:Generator_ColumnPropNameInTable="PrcPrnTextTypeColumn" type="xs:string" default="SellPrice" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="PK_PrintLabel" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PrintLabel" />
+      <xs:field xpath="mstns:LabelID" />
+    </xs:unique>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:PrintLabel" />
+      <xs:field xpath="mstns:LabelDescription" />
+    </xs:unique>
+    <xs:unique name="PK_PrintSetting" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PrintSetting" />
+      <xs:field xpath="mstns:SettingCode" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_PrintSetting_PrintLabel" msdata:parent="PrintLabel" msdata:child="PrintSetting" msdata:parentkey="LabelID" msdata:childkey="LabelID" msprop:Generator_UserRelationName="FK_PrintSetting_PrintLabel" msprop:Generator_RelationVarName="relationFK_PrintSetting_PrintLabel" msprop:Generator_UserChildTable="PrintSetting" msprop:Generator_UserParentTable="PrintLabel" msprop:Generator_ParentPropName="PrintLabelRow" msprop:Generator_ChildPropName="GetPrintSettingRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
